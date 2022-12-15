@@ -41,7 +41,7 @@ header h1 {
 }
 
 a, a:visited {
-    color: var(--p-lightest);
+    color: var(--p-darkest);
 }
 
 nav {
@@ -115,6 +115,7 @@ section > h3 {
     /* padding-left: 1%;
     padding-right: 3%; */
     padding: 1% 3% 1% 1%;
+    font-size: 14pt;
 }
 
 .section-body div {
@@ -129,6 +130,6 @@ section > h3 {
 }
 
 
-article a {
-    background-image: "./assets/ima"
+.study-guide-thumbnail-container {
+    background-image: url("./assets/images/study-guide-thumbnail.jpg");
 }
