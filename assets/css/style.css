@@ -24,7 +24,7 @@ body {
 
 header {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -40,6 +40,7 @@ header h1 {
     margin-left: 40px;
     color: var(--p-lightest);
     font-size: 100px;
+    transition: all 0.2s ease-in-out;
 }
 
 a, a:visited {
@@ -64,6 +65,14 @@ nav a:visited {
 nav a:hover {
     color: var(--p-darkest);
     background-color: var(--p-lightest);
+}
+
+.hamburger {
+    background-color: var(--p-lightest);
+    border: 0;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 article {
@@ -139,6 +148,7 @@ h4 {
 
 .hero-banner {
     position: relative;
+    padding-top: 90px;
 }
 
 .hero-banner img {
@@ -199,8 +209,72 @@ section > h3 {
 
 
 @media screen and (max-width: 1477px) {
-    /* TODO: make sections column flex, make header compact, change section left border to a top border */
+    /* TODO: make header compact, contact me section */
+
+    header {
+        flex-direction: column;
+        position: initial;
+        height: auto;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-items: center;
+        padding-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 80px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav a,
+    nav a:visited {
+        color: var(--p-darker);
+        background-color: var(--p-light);
+        padding: 5px 20px;
+        border-radius: 25px;
+        margin: auto 10px;
+    }
+
+    .hero-banner {
+        padding: 0;
+    }
+
+    .hero-banner img {
+        padding: 0;
+        margin: 0;
+    }
+
     main > section {
         flex-direction: column;
     }
+
+    .section-body {
+        border-left: 0px;
+        border-top: 5px solid var(--p-darker);
+    }
+
+    section > h3 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
+
+
+@media screen and (max-width: 786px) {
+    
+    header {
+        height: 100px;
+    }
+    
+    header h1 {
+        font-size: 50px;
+    }
+
+    nav a {
+        font-size: 20px;
+        padding: 10px 40px;
+    }
+
+    
 }
