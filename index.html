@@ -22,38 +22,93 @@
 
             <main>
                 <section class="hero-banner">
-                    <img src="./assets/images/sumtwelve trippy banner web.jpg" />
+                    <img class="hero-img" src="./assets/images/sumtwelve trippy banner web.jpg" />
+                    <img class="avatar-img" src="./assets/images/sumtwelve-avatar-web.jpg" />
                     <h2>Just another creative.</h2>
                 </section>
 
                 <section id="about-me" class="about-me-section">
                     <h3>About Me</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="section-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                 </section>
 
                 <section id="works" class="works-section">
                     <h3>Works</h3>
-                    <div class="works-imgs-container">
-                        <a href="#"><img src="https:via.placeholder.com/900x500" /></a>
-                        <a href="#"><img src="https:via.placeholder.com/400x250" /></a>
-                        <a href="#"><img src="https:via.placeholder.com/400x250" /></a>
-                        <a href="#"><img src="https:via.placeholder.com/400x250" /></a>
-                        <a href="#"><img src="https:via.placeholder.com/400x250" /></a>
+                    <div class="section-body works-imgs-container">
+                        <article class="works-card works-big-card">
+                            <a href="#">
+                                <div class="card-caption-box">
+                                    <h3>Random Color Generator</h3>
+                                    <h4>HTML / CSS</h4>
+                                </div>
+                                <img src="./assets/images/color-gen-thumbnail.jpg" />
+                            </a>
+                        </article>
+
+                        <!-- The below div, and the one farther down, serve as line breaks in the flexbox -->
+                        <div class="flex-line-break"></div>
+
+                        <article class="works-card works-little-card">
+                            <a href="#">
+                                <div class="card-caption-box">
+                                    <h3>Bootcamp Study Guide</h3>
+                                    <h4>HTML / CSS / JavaScript</h4>
+                                </div>
+                                <img src="./assets/images/study-guide-thumbnail.jpg" />
+                            </a>
+                        </article>
+
+                        <article class="works-card works-little-card">
+                            <a href="#">
+                                <div class="card-caption-box">
+                                    <h3>Piano</h3>
+                                    <h4>HTML / CSS</h4>
+                                </div>
+                                <img src="./assets/images/piano-thumbnail.jpg" />
+                            </a>
+                        </article>
+
+                        <div class="flex-line-break"></div>
+
+                        <article class="works-card works-little-card">
+                            <a href="#">
+                                <div class="card-caption-box">
+                                    <h3>Hover Secret Message</h3>
+                                    <h4>HTML / CSS</h4>
+                                </div>
+                                <img src="./assets/images/hover-secret-message-thumbnail.jpg" />
+                            </a>
+                        </article>
+
+                        <article class="works-card works-little-card">
+                            <a href="#">
+                                <div class="card-caption-box">
+                                    <h3>Flower Simulator</h3>
+                                    <h4>HTML / CSS</h4>
+                                </div>
+                                <img src="./assets/images/flower-sim-thumbnail.jpg" />
+                            </a>
+                        </article>
                     </div>
                 </section>
 
                 <section id="contact" class="contact-section">
                     <h3>Contact Me</h3>
-                    <p>sumtwelve@gmail.com</p>
-                    <p>123-456-7890</p>
-                    <a href="#">Twitter</a>
-                    <a href="#">Bandcamp</a>
+                    <div class="section-body contact-flexbox">
+                        <a class="contact-item" href="#">sumtwelve@gmail.com</a>
+                        <a class="contact-item" href="#">123-456-7890</a>
+                        <a class="contact-item" href="#">Twitter</a>
+                        <a class="contact-item" href="#">Bandcamp</a>
+                    </div>
                 </section>
             </main>
 
 
             <footer>
-
+                <section style="text-align: center;">
+                    <p>&copy; 2022 Noah Nielsen / Sumtwelve</p>
+                </section>
             </footer>
         </body>
 </html>
+
