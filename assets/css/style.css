@@ -12,7 +12,8 @@
     --ming: #387780ff;
     --ming-t: rgba(56, 118, 128, 0.89);
     --timberwolf: rgb(234, 228, 238);
-    --amaranth: rgba(232, 49, 79, 0.89);
+    --amaranth: rgba(232, 49, 79);
+    --amaranth-t: rgba(232, 49, 79, 0.89);
 }
 
 body {
@@ -65,14 +66,6 @@ nav a:visited {
 nav a:hover {
     color: var(--p-darkest);
     background-color: var(--p-lightest);
-}
-
-.hamburger {
-    background-color: var(--p-lightest);
-    border: 0;
-    color: #ffffff;
-    font-size: 20px;
-    cursor: pointer;
 }
 
 article {
@@ -138,7 +131,7 @@ h4 {
 }
 
 .works-card:hover .card-caption-box {
-    background-color: var(--amaranth);
+    background-color: var(--amaranth-t);
 }
 
 .works-card:hover {
@@ -151,9 +144,21 @@ h4 {
     padding-top: 90px;
 }
 
-.hero-banner img {
+.hero-img {
     width: 100%;
 }
+
+.avatar-img {
+    width: 11vw;
+    height: 11vw;
+    position: absolute;
+    justify-self: center;
+    bottom: 2vh;
+    left: 5vw;
+    border: 10px solid white;
+    border-radius: 50%;
+}
+
 
 .hero-banner h2 {
     position: absolute;
@@ -200,10 +205,35 @@ section > h3 {
     font-size: 20pt;
 }
 
+.contact-section {
+    padding-bottom: 10vh;
+}
+
 .contact-section a {
     display: block;
     color: var(--p-darkest);
     text-decoration: none;
+}
+
+
+.contact-flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 2vw 2vw;
+}
+
+.contact-item,
+.contact-item:visited {
+    padding: 20px;
+    color: white;
+    background-color: var(--p-dark);
+    transition: all 0.3s;
+}
+
+.contact-item:hover {
+    background-color: var(--amaranth);
+    font-weight: bold;
 }
 
 
@@ -247,16 +277,29 @@ section > h3 {
 
     main > section {
         flex-direction: column;
+        text-align: center;
+        padding-left: 1%;
     }
 
     .section-body {
         border-left: 0px;
-        border-top: 5px solid var(--p-darker);
     }
 
     section > h3 {
         text-align: center;
-        margin-bottom: 5px;
+        border-top: 5px solid var(--p-darker);
+        border-bottom: 5px solid var(--p-darker);
+        padding-bottom: 1vh;
+        margin-bottom: 3vh;
+    }
+
+    .avatar-img {
+        bottom: 1vh;
+        border: 5px solid white;
+    }
+
+    .contact-flexbox {
+        align-items: stretch;
     }
 }
 
@@ -265,16 +308,50 @@ section > h3 {
     
     header {
         height: 100px;
+        flex-wrap: wrap;
     }
     
     header h1 {
         font-size: 50px;
     }
 
-    nav a {
-        font-size: 20px;
-        padding: 10px 40px;
+    nav {
+        justify-self: center;
     }
 
+    nav a,
+    nav a:visited {
+        font-size: 15px;
+        padding: 3px 10px;
+    }
+
+    .hero-banner h2 {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 691px) {
     
+    .contact-flexbox {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        align-items: stretch;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    nav a,
+    nav a:visited {
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+    }
 }
