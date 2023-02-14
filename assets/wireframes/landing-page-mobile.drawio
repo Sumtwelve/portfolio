@@ -1,0 +1,45 @@
+<mxfile host="65bd71144e">
+    <diagram id="StMzeUG-sSdjvqpDDrxn" name="Page-1">
+        <mxGraphModel dx="513" dy="366" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="200" pageHeight="400" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="8" value="&lt;span style=&quot;color: rgb(255, 255, 255); font-family: Verdana; font-size: 8px;&quot;&gt;© 2023 Noah Nielsen // Sumtwelve&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=8;fillColor=#38001C;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry y="370" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="MUSIC" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=14;fillColor=#191919;" vertex="1" parent="1">
+                    <mxGeometry y="80" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="WEB&lt;br&gt;DEVELOPMENT" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=14;fillColor=#191919;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="50" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="COLLABORATIONS" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=14;fillColor=#191919;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="210" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="ABOUT ME" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=14;fillColor=#191919;" vertex="1" parent="1">
+                    <mxGeometry y="290" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="SUMTWELVE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=28;fontColor=#F57AF5;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry y="170" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <UserObject label="" tooltip="This blue border expands inward on hover." id="18">
+                    <mxCell style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=28;fontColor=none;fillColor=none;noLabel=1;strokeWidth=10;strokeColor=#99CCFF;" vertex="1" parent="1">
+                        <mxGeometry x="55" y="5" width="140" height="70" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="19" value="" style="endArrow=none;html=1;fontFamily=Verdana;fontSize=28;fontColor=none;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="180" y="160" as="sourcePoint"/>
+                        <mxPoint x="200" y="160" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=none;html=1;fontFamily=Verdana;fontSize=28;fontColor=none;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="6">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="210" as="sourcePoint"/>
+                        <mxPoint x="20" y="210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
