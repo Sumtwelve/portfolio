@@ -16,6 +16,7 @@ body {
 
 .a-box {
     height: 20vh;
+    min-height: 100px;
     width: calc(100vw / 3);
 }
 a {
@@ -26,10 +27,11 @@ a {
     text-decoration: none;
     text-shadow: rgba(0,0,0,0.5) 4px 4px 2px;
     font-size: clamp(1.5rem, 3vw, 4rem);
-    transition: padding 0.2s ease, transform 0.2s ease;
+    transition: padding 0.2s ease, transform 0.2s ease, font-size 0.2s ease;
 }
 a:before {
-    content:'';
+    /* This centers the text vertically */
+    content: '';
     height: 100%;
     width: 10px;
     display: inline-block;
@@ -37,11 +39,18 @@ a:before {
 }
 
 .top-bar .a-box:hover a {
-    padding-bottom: 40px;
+    transform: translateY(25px);
+    /* padding-top: 40px; */
+    /* background-image: url('../images/hover-overlay-180.png'); */
+    /* background-blend-mode: soft-light; */
+    /* font-size: 60pt; */
 }
 .bottom-bar .a-box:hover a {
-    transform: translateY(-40px);
-    padding-top: 40px;
+    transform: translateY(-25px);
+    /* padding-top: 40px; */
+    /* background-image: url('../images/hover-overlay.png'); */
+    /* background-blend-mode:soft-light; */
+    /* font-size: 60pt; */
 }
 
 /* Getting colors onto each link */
@@ -80,10 +89,6 @@ a:before {
     align-items: center;
 }
 
-.title-box {
-    margin: 0 5vw;
-}
-
 .avatar-box {
     height: 35vh;
     border-radius: 50%;
@@ -94,11 +99,20 @@ img {
     height: 100%;
 }
 
+.divider-line {
+    display: inline-block;
+    height: 40vh;
+    margin: 0 4vw;
+    border-right: 1px solid #a3a3a3;
+}
+
 h1 {
+    color: #3e3e3e;
     font-size: 72pt;
     margin: 0;
 }
 
 h2 {
+    color: #656565;
     font-size: 20pt;
 }
