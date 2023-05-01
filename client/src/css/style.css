@@ -1,357 +1,104 @@
-:root {
-    --p-darkest: #150025;
-    --p-darker: #270046;
-    --p-dark: #3b0068;
-    --p-light: #c16fff;
-    --p-lighter: #d195ff;
-    --p-lightest: #efdbff;
-    --p-lightest-t: #efdbffe7;
-
-    --sonic-silver: #757780ff;
-    --sage: #d2cca1ff;
-    --ming: #387780ff;
-    --ming-t: rgba(56, 118, 128, 0.89);
-    --timberwolf: rgb(234, 228, 238);
-    --amaranth: rgba(232, 49, 79);
-    --amaranth-t: rgba(232, 49, 79, 0.89);
-}
-
 body {
+    background-color: #ebebeb;
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--p-dark);
-    background-color: var(--timberwolf);
 }
 
-header {
+.top-bar,
+.bottom-bar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.bottom-bar {
     position: fixed;
-    z-index: 2;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--p-dark);
-    height: 90px;
+    bottom: 0;
 }
 
-header h1 {
-    /* padding: 15px 40px 15px 100px; */
-    justify-self: baseline;
-    margin-left: 40px;
-    color: var(--p-lightest);
-    font-size: 100px;
-    transition: all 0.2s ease-in-out;
+.a-box {
+    height: 20vh;
+    width: calc(100vw / 3);
 }
-
-a, a:visited {
-    color: var(--p-darkest);
-}
-
-nav {
-    /* margin: 20px; */
-    margin-right: 30px;
-}
-
-nav a,
-nav a:visited {
-    color: var(--p-lightest);
-    font-size: 30px;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-weight: bolder;
-    transition: all 0.25s ease-out;
-}
-
-nav a:hover {
-    color: var(--p-darkest);
-    background-color: var(--p-lightest);
-}
-
-article {
-    position: relative;
-}
-
-h3 {
-    font-size: 18pt;
-}
-
-h4 {
-    font-size: 12pt;
-}
-
-/* the flexbox container for the works articles */
-.works-imgs-container {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 2%;
-    border-left: 5px solid var(--p-darker);
-    padding-left: 1%;
-}
-
-.works-card img {
-    width: 100%;
+a {
+    display: inline-block;
     height: 100%;
-    object-fit: cover;
-    filter: grayscale(80%);
-    transition: all 0.3s ease-in-out;
-}
-
-.works-big-card {
-    position: relative;
     width: 100%;
-    height: 400px;
-}
-
-.works-little-card {
-    width: 49%;
-    height: 200px;
-}
-
-.card-caption-box {
-    position: absolute;
-    z-index: 1; /* a filter property applies to card's image on hover, this covers caption box by default, but setting z-index fixes */
-    background-color: var(--ming-t);
-    padding: 1% 5%;
-    bottom: 5%;
-    transition: all 0.3s;
-}
-
-.card-caption-box h3,
-.card-caption-box h4 {
-    color: white;
-}
-
-.works-card {
-    transition: all 0.3s;
-}
-
-.works-card:hover img {
-    filter: grayscale(10%);
-}
-
-.works-card:hover .card-caption-box {
-    background-color: var(--amaranth-t);
-}
-
-.works-card:hover {
-    box-shadow: var(--p-dark) 0 0 10px;
-}
-
-
-.hero-banner {
-    position: relative;
-    padding-top: 90px;
-}
-
-.hero-img {
-    width: 100%;
-}
-
-.avatar-img {
-    width: 11vw;
-    height: 11vw;
-    position: absolute;
-    justify-self: center;
-    bottom: 2vh;
-    left: 5vw;
-    border: 10px solid white;
-    border-radius: 50%;
-}
-
-
-.hero-banner h2 {
-    position: absolute;
-    right: 5%;
-    bottom: 10%;
-    color: var(--p-lightest);
-    background-color: var(--p-darker);
-    padding: 20px;
-}
-
-
-/* settles all main content in a flexbox to allow easier proportioning */
-main > section {
-    display: flex;
-    flex-flow: row;
-}
-
-/* this class is applied to divs in the flexbox, to make them serve as line breaks. It looks a bit hacky but it works. */
-.flex-line-break {
-    flex-basis: 100%;
-    height: 20px;
-}
-
-section > h3 {
-    font-size: 300%;
-    text-align: right;
-    min-width: 20%;
-    margin-right: 1%;
-    padding-right: 1%;
-    
-}
-
-.section-body {
-    align-self: center;
-    border-left: 5px solid var(--p-darker);
-    /* padding-left: 1%;
-    padding-right: 3%; */
-    padding: 1% 3% 1% 3%;
-    font-size: 14pt;
-}
-
-.section-body div {
-    display: inline;
-    font-size: 20pt;
-}
-
-.contact-section {
-    padding-bottom: 10vh;
-}
-
-.contact-section a {
-    display: block;
-    color: var(--p-darkest);
+    text-align: center;
     text-decoration: none;
+    text-shadow: rgba(0,0,0,0.5) 4px 4px 2px;
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    transition: padding 0.2s ease, transform 0.2s ease;
+}
+a:before {
+    content:'';
+    height: 100%;
+    width: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
+.top-bar .a-box:hover a {
+    padding-bottom: 40px;
+}
+.bottom-bar .a-box:hover a {
+    transform: translateY(-40px);
+    padding-top: 40px;
+}
 
-.contact-flexbox {
+/* Getting colors onto each link */
+.music-btn {
+    color: #f2f2f2;
+    background-color: #BC5050;
+}
+.webdev-btn {
+    color: #f2f2f2;
+    background-color: #A25CA4;
+}
+.games-btn {
+    color: #f2f2f2;
+    background-color: #8E9F69;
+}
+.about-btn {
+    color: #f2f2f2;
+    background-color: #5068BC;
+}
+.resume-btn {
+    color: #4d4d4d;
+    background-color: #DCE478;
+    text-shadow: none;
+}
+.contact-btn {
+    color: #f2f2f2;
+    background-color: #EA8E5B;
+}
+
+/* MIDDLE SECTION STYLING */
+
+.middle {
+    height: 60vh;
     display: flex;
-    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
-    gap: 2vw 2vw;
 }
 
-.contact-item,
-.contact-item:visited {
-    padding: 20px;
-    color: white;
-    background-color: var(--p-dark);
-    transition: all 0.3s;
+.title-box {
+    margin: 0 5vw;
 }
 
-.contact-item:hover {
-    background-color: var(--amaranth);
-    font-weight: bold;
+.avatar-box {
+    height: 35vh;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-
-
-@media screen and (max-width: 1477px) {
-    /* TODO: make header compact, contact me section */
-
-    header {
-        flex-direction: column;
-        position: initial;
-        height: auto;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-items: center;
-        padding-bottom: 10px;
-    }
-
-    header h1 {
-        font-size: 80px;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav a,
-    nav a:visited {
-        color: var(--p-darker);
-        background-color: var(--p-light);
-        padding: 5px 20px;
-        border-radius: 25px;
-        margin: auto 10px;
-    }
-
-    .hero-banner {
-        padding: 0;
-    }
-
-    .hero-banner img {
-        padding: 0;
-        margin: 0;
-    }
-
-    main > section {
-        flex-direction: column;
-        text-align: center;
-        padding-left: 1%;
-    }
-
-    .section-body {
-        border-left: 0px;
-    }
-
-    section > h3 {
-        text-align: center;
-        border-top: 5px solid var(--p-darker);
-        border-bottom: 5px solid var(--p-darker);
-        padding-bottom: 1vh;
-        margin-bottom: 3vh;
-    }
-
-    .avatar-img {
-        bottom: 1vh;
-        border: 5px solid white;
-    }
-
-    .contact-flexbox {
-        align-items: stretch;
-    }
+img {
+    height: 100%;
 }
 
-
-@media screen and (max-width: 786px) {
-    
-    header {
-        height: 100px;
-        flex-wrap: wrap;
-    }
-    
-    header h1 {
-        font-size: 50px;
-    }
-
-    nav {
-        justify-self: center;
-    }
-
-    nav a,
-    nav a:visited {
-        font-size: 15px;
-        padding: 3px 10px;
-    }
-
-    .hero-banner h2 {
-        font-size: 10px;
-        padding: 5px;
-    }
-
-
+h1 {
+    font-size: 72pt;
+    margin: 0;
 }
 
-
-@media screen and (max-width: 691px) {
-    
-    .contact-flexbox {
-        flex-direction: column;
-    }
-
-    .contact-item {
-        align-items: stretch;
-        text-align: center;
-    }
-}
-
-
-@media screen and (max-width: 370px) {
-    nav a,
-    nav a:visited {
-        font-size: 10px;
-        padding: 0;
-        margin: 0;
-    }
+h2 {
+    font-size: 20pt;
 }
