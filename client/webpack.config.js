@@ -12,8 +12,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
-      title: 'Webpack Plugin',
+      template: './index.html'
     }),
     new MiniCssExtractPlugin(),
   ],
@@ -24,7 +23,7 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpe?g|gif)$/i,
         type: 'asset/resource',
       },
       {
