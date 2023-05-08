@@ -18,12 +18,6 @@ button {
     cursor: pointer;
     transition: transform 0.2s ease;
 }
-.top-bar button:hover {
-    transform: translateY(30px);
-}
-.bottom-bar button:hover {
-    transform: translateY(-30px);
-}
 
 .top-bar,
 .bottom-bar {
@@ -42,38 +36,25 @@ button {
     min-height: 100px;
     width: calc(100vw / 3);
 }
-a {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: rgba(0,0,0,0.5) 4px 4px 2px;
-    font-size: clamp(3rem, 4vw, 4rem);
-    transition: padding 0.2s ease, transform 0.2s ease;
-}
-a::before {
-    /* This centers the text vertically */
-    content: '';
-    height: 100%;
-    /* width: 10px; */
-    display: inline-block;
-    vertical-align: middle;
+.music-box::before,
+.webdev-box::before,
+.games-box::before,
+.about-box::before,
+.resume-box::before,
+.contact-box::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: calc(100vw / 3);
+    height: inherit;
+    z-index: -1;
 }
 
-.top-bar .a-box:hover a {
-    transform: translateY(30px);
-    /* padding-top: 40px; */
-    /* background-image: url('../images/hover-overlay-180.png'); */
-    /* background-blend-mode: soft-light; */
-    /* font-size: 60pt; */
+.top-bar .a-box:hover button {
+    transform: translateY(35px);
 }
-.bottom-bar .a-box:hover a {
-    transform: translateY(-30px);
-    /* padding-top: 40px; */
-    /* background-image: url('../images/hover-overlay.png'); */
-    /* background-blend-mode:soft-light; */
-    /* font-size: 60pt; */
+.bottom-bar .a-box:hover button {
+    transform: translateY(-35px);
 }
 
 /* Getting colors onto each link */
@@ -81,29 +62,49 @@ a::before {
     color: #f2f2f2;
     background-color: #BC5050;
 }
+.music-box::before {
+    background-color: #9c3636;
+}
 .webdev-btn {
     color: #f2f2f2;
     background-color: #A25CA4;
+}
+.webdev-box::before {
+    background-color: #8c3e8f;
 }
 .games-btn {
     color: #f2f2f2;
     background-color: #8E9F69;
 }
+.games-box::before {
+    background-color: #76884e;
+}
 .about-btn {
     color: #f2f2f2;
     background-color: #5068BC;
+}
+.about-box::before {
+    background-color: #364da0;
 }
 .resume-btn {
     color: #4d4d4d;
     background-color: #DCE478;
     text-shadow: none;
 }
+.resume-box::before {
+    background-color: #bbc25e;
+}
 .contact-btn {
     color: #f2f2f2;
     background-color: #EA8E5B;
 }
+.contact-box::before {
+    background-color: #c96b39;
+}
+
 
 /* MIDDLE SECTION STYLING */
+
 
 .middle {
     height: 60vh;
