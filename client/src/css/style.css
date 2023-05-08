@@ -51,10 +51,10 @@ button {
 }
 
 .top-bar .a-box:hover button {
-    transform: translateY(35px);
+    transform: translateY(30px);
 }
 .bottom-bar .a-box:hover button {
-    transform: translateY(-35px);
+    transform: translateY(-30px);
 }
 
 /* Getting colors onto each link */
@@ -112,10 +112,6 @@ button {
     justify-content: center;
     align-items: center;
 }
-
-/* .title-box {
-    text-align: right;
-} */
 
 .avatar-box {
     height: 35vh;
