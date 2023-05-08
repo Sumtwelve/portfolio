@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Home = () => {
+const TopNav = () => {
     return (
-        <main>
+        <div>
             
-        </main>
+        </div>
     )
 };
 
-export default Home;
+export default TopNav;

@@ -9,6 +9,12 @@ body {
     margin: 0;
 }
 
+.portfolio-app {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
 button {
     height: 100%;
     width: 100%;

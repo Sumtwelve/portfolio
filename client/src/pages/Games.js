@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Webdev = () => {
+const Games = () => {
     return (
         <main>
-            <h1>Webdev</h1>
+            <h1>Games</h1>
         </main>
     )
 };
 
-export default Webdev;
+export default Games;
