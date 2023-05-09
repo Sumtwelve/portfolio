@@ -5,7 +5,7 @@ const PORT = 3001;
 const app = express();
 
 // Serves static files in the entire client's dist folder
-app.use(express.static('../client/dist'));
+app.use(express.static('../client/build'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
