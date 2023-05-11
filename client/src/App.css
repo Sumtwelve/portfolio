@@ -40,7 +40,7 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: clamp(4.3rem, 5vw, 6vw);
+    font-size: clamp(3rem, 5vw, 6vw);
     line-height: 135px;
     padding-left: 20px;
     margin: auto;
@@ -242,7 +242,7 @@ nav a:hover button {
     color: #383838;
     text-align: center;
     font-family: 'Fahkwang', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: clamp(4.5rem, 8vw, 8rem);
+    font-size: clamp(3rem, 8vw, 8rem);
     margin: 30px;
 }
 
