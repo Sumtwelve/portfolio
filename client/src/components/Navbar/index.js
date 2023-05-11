@@ -15,7 +15,7 @@ const Navbar = () => {
     const [menuIcons, setMenuIcon] = useState(faBars);
 
     /**
-     * 
+     * Applies/removes the 'menu-display' class for each Link in the menu nav.
      */
     function toggleMenu() {
         document.querySelectorAll(".react-link").forEach((tag) => {
