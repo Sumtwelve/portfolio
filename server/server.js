@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Serves static files in the entire client's dist folder
