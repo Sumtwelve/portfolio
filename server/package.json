@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "server": "node server.js"
+    "server": "node server.js",
+    "watch": "nodemon server.js"
   },
   "author": "Sumtwelve",
   "license": "ISC",

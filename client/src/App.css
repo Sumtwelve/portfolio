@@ -1,0 +1,475 @@
+:root {
+    --select: #2ac9e662;
+    --music: #BC5050;
+    --webdev: #A25CA4;
+    --games: #8E9F69;
+    --about: #5068BC;
+    --resume: #DCE478;
+    --contact: #EA8E5B;
+}
+
+::-moz-selection {
+    background: var(--select);
+}
+  
+::selection {
+    background: var(--select);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #ebebeb;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#root {
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Aleo', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -webkit-linear-gradient(#f7f7f7 25%, #e7e7e7, #2b2b2b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(4.3rem, 5vw, 6vw);
+    line-height: 135px;
+    padding-left: 20px;
+    margin: auto;
+    filter:
+        drop-shadow(5px 0 #000)
+        drop-shadow(-5px 0 #000)
+        drop-shadow(0 5px #000)
+        drop-shadow(0 -5px #000);
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Aleo'
+}
+
+h3,
+h4,
+p {
+    font-family: 'Alegreya Sans'
+}
+
+.back-btn {
+    display: block;
+    z-index: 0;
+    font-size: 20pt;
+    text-shadow: none;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: whitesmoke;
+    background: -webkit-linear-gradient(0deg, #0044ff, #be0075);
+    width: 175px;
+    margin: 0 auto;
+    border-radius: 15px;
+    transition: all 1.1s ease;
+}
+.back-btn:hover {
+    transform: scale(1.05);
+    filter: hue-rotate(100deg);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.8);
+
+}
+
+.menu-header {
+    display: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+button {
+    height: 70px;
+    width: calc(100% / 6);
+    border: none;
+    font-size: clamp(1.3rem, 2.2vw, 3.5rem);
+    text-shadow: rgba(0,0,0,0.5) 4px 4px 2px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-behind {
+    content: "";
+    width: calc(100% / 6);
+    height: 70px;
+    z-index: -1;
+}
+
+nav a:hover button {
+    transform: translateY(15px);
+}
+
+/* Getting colors onto each link */
+.music-btn {
+    color: #f2f2f2;
+    background-color: var(--music);
+}
+.music-behind {
+    background-color: #9c3636;
+    position: absolute;
+    left: 0;
+}
+
+.webdev-btn {
+    color: #f2f2f2;
+    background-color: var(--webdev);
+}
+.webdev-behind {
+    position: absolute;
+    left: calc(100% / 6);
+    background-color: #8c3e8f;
+}
+
+.games-btn {
+    color: #f2f2f2;
+    background-color: var(--games);
+}
+.games-behind {
+    position: absolute;
+    left: calc(100% / 3);
+    background-color: #76884e;
+    
+}
+
+.about-btn {
+    color: #f2f2f2;
+    background-color: var(--about);
+}
+.about-behind {
+    position: absolute;
+    width: calc(100% / 6);
+    z-index: -2;
+    background-color: #364da0;
+}
+
+.resume-btn {
+    color: #4d4d4d;
+    background-color: var(--resume);
+    text-shadow: none;
+}
+.resume-behind {
+    position: absolute;
+    right: calc(100% / 6);
+    background-color: #bbc25e;
+}
+
+.contact-btn {
+    color: #f2f2f2;
+    background-color: var(--contact);
+}
+.contact-behind {
+    position: absolute;
+    right: 0;
+    background-color: #c96b39;
+}
+
+
+  /**************************/
+ /* HOMEPAGE STYLING BELOW */
+/**************************/
+
+
+.header {
+    display: flex;
+    align-items: center;
+    max-height: 125px;
+}
+
+.banner-wrapper {
+    height: 125px;
+    width: 100%;
+    background-image:
+        linear-gradient(to right, #000, rgba(0,0,0,0) 60%),
+        url('../public/images/banner.jpg');
+    background-size: cover;
+}
+.banner-img {
+    height: 100%;
+    z-index: -2;
+}
+
+.avatar-img {
+    position: absolute;
+    right: 20px;
+    height: 90px;
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px #000;
+}
+.hello {
+    display: none;
+    position: absolute;
+    right: 130px;
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 20pt;
+    padding: 6px 12px 6px 12px;
+    border-radius: 10px;
+}
+.avatar-img:hover + span {
+    display: initial;
+}
+
+.avatar-img-body-home {
+    display: none;
+}
+
+.divider-line {
+    display: inline-block;
+    height: 40vh;
+    margin: 0 4vw;
+    border-right: 1px solid #a3a3a3;
+}
+
+.homepage h2 {
+    color: #383838;
+    text-align: center;
+    font-family: 'Fahkwang', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: clamp(4.5rem, 8vw, 8rem);
+    margin: 30px;
+}
+
+.homepage h3 {
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+    text-align: center;
+    font-size: clamp(30pt, 5vw, 40pt);
+    margin: 15px 0 25px 0;
+    padding: 0 5%;
+}
+
+.homepage p {
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+    text-align: center;
+    font-size: clamp(16pt, 2.5vw, 24pt);
+    padding: 0 50px;
+    margin: 15px 0;
+}
+
+.homepage-ext-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px 50px;
+    margin-top: 45px;
+    padding: 0 20px 75px 20px;
+}
+.ext-link {
+    display: inline-block;
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+.ext-link-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.ext-link:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+}
+
+
+
+  /***********************/
+ /* MUSIC STYLING BELOW */
+/***********************/
+
+
+
+
+
+  /*************************/
+ /* WEB DEV STYLING BELOW */
+/*************************/
+
+
+
+
+
+  /***********************/
+ /* GAMES STYLING BELOW */
+/***********************/
+
+
+
+
+
+  /***********************/
+ /* ABOUT STYLING BELOW */
+/***********************/
+
+.about-nav-joiner {
+    display: block;
+    background-color: var(--about);
+    height: 10px;
+    width: 100%;
+}
+
+.about-main {
+    margin: 0 auto;
+    background-color: var(--about);
+    color: whitesmoke;
+    width: clamp(15px, 80%, 900px);
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.about-main p {
+    padding: 0 clamp(25px, 5vw, 450px);
+    font-size: clamp(18pt, 4vw, 20pt);
+}
+
+.about-main h2 {
+    text-align: center;
+    font-size: 48pt;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.about-main h3 {
+    text-align: center;
+    font-size: 30pt;
+}
+
+
+
+  /************************/
+ /* RESUME STYLING BELOW */
+/************************/
+
+
+
+
+
+  /*************************/
+ /* CONTACT STYLING BELOW */
+/*************************/
+
+
+
+
+
+  /************************/
+ /* FOOTER STYLING BELOW */
+/************************/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+    color: whitesmoke;
+    background-color: #09006C;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .menu-display {
+        display: initial;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60px;
+        background: linear-gradient(to right, #45A8BD, #8F2985);
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+    .menu-header:hover h3 {
+        transform: scale(1.05);
+    }
+
+    nav a {
+        display: none;
+        width: 100%;
+        z-index: 2;
+    }
+
+    nav button {
+        width: 100%;
+        transition: all 0.2s ease;
+    }
+
+    nav a:hover button {
+        transform: none;
+        width: 90%;
+    }
+
+    .btn-behind {
+        position: absolute;
+        left: 90%;
+        height: 70px;
+        width: 10%;
+    }
+
+    .menu-header {
+        align-self: flex-start;
+        display: flex;
+        max-height: 60px;
+        width: 100%;
+    }
+    .menu-text {
+        color: whitesmoke;
+        font-size: 24pt;
+        line-height: 54px;
+        margin: 0;
+        transform-origin: left;
+        transition: all 0.2s ease;
+    }
+    .menu-btn {
+        color: whitesmoke;
+        height: 36px;
+        padding: 12px 16px;
+        margin: 0;
+    }
+
+    .avatar-img,
+    .avatar-img-top-home {
+        display: none;
+    }
+    .avatar-img-body-home {
+        display: block;
+        position: static;
+        margin: 10px auto;
+        height: clamp(100px, 25vw, 150px);
+    }
+
+    .homepage h2 {
+        margin: 5px;
+    }
+
+
+
+
+
+    .about-main p {
+        padding: 0 50px;
+    }
+}

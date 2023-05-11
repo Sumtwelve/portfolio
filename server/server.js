@@ -1,14 +1,18 @@
 const express = require('express');
+const path = require('path');
 
+const PORT = 3001;
 const app = express();
-const PORT = process.env.PORT || 3001;
 
 // Serves static files in the entire client's dist folder
-app.use(express.static('../client/dist'));
+app.use(express.static('../client/build'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Requires HTML route
-require('./routes/htmlRoutes')(app);
+// This is a single-page application, so this is the only route we need
+// (That is, unless I ever decide to implement a database and an API)
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+})
 
 app.listen(PORT, () => console.log(`Now listening on port: ${PORT}`));

@@ -1,6 +1,22 @@
+html {
+    /* idk why i had to do this but it feels weird if html doesn't take up the whole space */
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
     background-color: #ebebeb;
     margin: 0;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: clamp(3rem, 4vw, 4rem);
+    text-shadow: rgba(0,0,0,0.5) 4px 4px 2px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 .top-bar,
@@ -8,9 +24,10 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    max-width: 100vw;
 }
 .bottom-bar {
-    position: fixed;
+    position: absolute;
     bottom: 0;
 }
 
@@ -19,38 +36,25 @@ body {
     min-height: 100px;
     width: calc(100vw / 3);
 }
-a {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: rgba(0,0,0,0.5) 4px 4px 2px;
-    font-size: clamp(1.5rem, 3vw, 4rem);
-    transition: padding 0.2s ease, transform 0.2s ease, font-size 0.2s ease;
-}
-a:before {
-    /* This centers the text vertically */
-    content: '';
-    height: 100%;
-    width: 10px;
-    display: inline-block;
-    vertical-align: middle;
+.music-box::before,
+.webdev-box::before,
+.games-box::before,
+.about-box::before,
+.resume-box::before,
+.contact-box::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    width: calc(100vw / 3);
+    height: inherit;
+    z-index: -1;
 }
 
-.top-bar .a-box:hover a {
-    transform: translateY(25px);
-    /* padding-top: 40px; */
-    /* background-image: url('../images/hover-overlay-180.png'); */
-    /* background-blend-mode: soft-light; */
-    /* font-size: 60pt; */
+.top-bar .a-box:hover button {
+    transform: translateY(30px);
 }
-.bottom-bar .a-box:hover a {
-    transform: translateY(-25px);
-    /* padding-top: 40px; */
-    /* background-image: url('../images/hover-overlay.png'); */
-    /* background-blend-mode:soft-light; */
-    /* font-size: 60pt; */
+.bottom-bar .a-box:hover button {
+    transform: translateY(-30px);
 }
 
 /* Getting colors onto each link */
@@ -58,29 +62,49 @@ a:before {
     color: #f2f2f2;
     background-color: #BC5050;
 }
+.music-box::before {
+    background-color: #9c3636;
+}
 .webdev-btn {
     color: #f2f2f2;
     background-color: #A25CA4;
+}
+.webdev-box::before {
+    background-color: #8c3e8f;
 }
 .games-btn {
     color: #f2f2f2;
     background-color: #8E9F69;
 }
+.games-box::before {
+    background-color: #76884e;
+}
 .about-btn {
     color: #f2f2f2;
     background-color: #5068BC;
+}
+.about-box::before {
+    background-color: #364da0;
 }
 .resume-btn {
     color: #4d4d4d;
     background-color: #DCE478;
     text-shadow: none;
 }
+.resume-box::before {
+    background-color: #bbc25e;
+}
 .contact-btn {
     color: #f2f2f2;
     background-color: #EA8E5B;
 }
+.contact-box::before {
+    background-color: #c96b39;
+}
+
 
 /* MIDDLE SECTION STYLING */
+
 
 .middle {
     height: 60vh;
@@ -91,6 +115,9 @@ a:before {
 
 .avatar-box {
     height: 35vh;
+    width: 35vh;
+    min-height: 35vh;
+    min-width: 35vh;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -107,12 +134,44 @@ img {
 }
 
 h1 {
-    color: #3e3e3e;
-    font-size: 72pt;
+    color: #424242;
+    font-size: clamp(5rem, 7vw, 9vw);
     margin: 0;
 }
 
 h2 {
     color: #656565;
-    font-size: 20pt;
+    font-size: clamp(1.5rem, 2vw, 4vw);
+    margin: 0;
+}
+
+.welcome-box {
+    margin: 20px;
+    max-width: 150px;
+}
+
+@media screen and (max-width: 975px) {
+    button {
+        font-size: clamp(1.7rem, 5.5vw, 3rem);
+    }
+
+    .divider-line {
+        display: none;
+    }
+
+    .middle {
+        height: 50vh;
+        flex-direction: column;
+        text-align: center;
+        margin-top: clamp(10px, 5vh, 9vh);
+    }
+
+    h1 {
+        margin-top: clamp(5px, 2vh, 3vh);
+        font-size: clamp(50pt, 11vw, 11vw);
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 3vw, 6vw)
+    }
 }
