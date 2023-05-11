@@ -1,14 +1,19 @@
 import React from "react";
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
-    const onHomepage = window.location.pathname === '/';
+    const location = useLocation();
+    const navigate = useNavigate();
+    const onHomepage = location.pathname === '/';
     return (
         <div className="header">
-            <a href="..">
-                <h1>SUMTWELVE</h1>
-            </a>
+            <h1 onClick={() => navigate('/')}>SUMTWELVE</h1>
             <div className="banner-wrapper"></div>
-            <img className={`${onHomepage ? "avatar-img-top-home " : ""}avatar-img`} src="./images/avatar-circle.png" alt="A simple icon representing the artist Sumtwelve."></img>
+            <img className={`${onHomepage ? "avatar-img-top-home " : ""}avatar-img`}
+                 src="./images/avatar-circle.png"
+                 alt="A simple icon representing the artist Sumtwelve."
+            />
+            <span className="hello">hi :)</span>
         </div>
     );
 };
