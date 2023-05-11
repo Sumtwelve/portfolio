@@ -22,11 +22,6 @@ body {
 }
 
 #root {
-    position: relative;
-    height: 100%;
-}
-
-.flex-column {
     height: 100%;
 }
 
@@ -35,22 +30,30 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    color: #f0f0f0;
+    background: -webkit-linear-gradient(#eeeeee, #dbdbdb, #000000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: clamp(4.3rem, 5vw, 6vw);
     line-height: 135px;
     padding-left: 20px;
     margin: auto;
     /* Credit to this outside text outline code goes to
     Stack Overflow user Ryall */
-    text-shadow:
-    -6px -6px 0 #000,
-     0   -6px 0 #000,
-     6px -6px 0 #000,
-     6px  0   0 #000,
-     6px  6px 0 #000,
-     0    6px 0 #000,
-    -6px  6px 0 #000,
-    -6px  0   0 #000;
+    /* text-shadow:
+        -6px -6px 0 #000000,
+        0   -6px 0 #000,
+        6px -6px 0 #000,
+        6px  0   0 #000,
+        6px  6px 0 #000,
+        0    6px 0 #000,
+        -6px  6px 0 #000,
+        -6px  0   0 #000; */
+    filter:
+        drop-shadow(5px 0 #000)
+        drop-shadow(-5px 0 #000)
+        drop-shadow(0 5px #000)
+        drop-shadow(0 -5px #000);
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -225,6 +228,7 @@ nav a:hover button {
     justify-content: center;
     gap: 10px 50px;
     margin-top: 45px;
+    padding: 0 20px 75px 20px;
 }
 .ext-link {
     display: inline-block;
@@ -240,13 +244,68 @@ nav a:hover button {
 
 
 
+  /***********************/
+ /* MUSIC STYLING BELOW */
+/***********************/
+
+
+
+
+
+  /*************************/
+ /* WEB DEV STYLING BELOW */
+/*************************/
+
+
+
+
+
+  /***********************/
+ /* GAMES STYLING BELOW */
+/***********************/
+
+
+
+
+
+  /***********************/
+ /* ABOUT STYLING BELOW */
+/***********************/
+
+
+
+
+
+  /************************/
+ /* RESUME STYLING BELOW */
+/************************/
+
+
+
+
+
+  /*************************/
+ /* CONTACT STYLING BELOW */
+/*************************/
+
+
+
+
+
+  /************************/
+ /* FOOTER STYLING BELOW */
+/************************/
+
 footer {
     position: fixed;
     bottom: 0;
-    width: 100%;
-    text-align: center;
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
     color: whitesmoke;
     background-color: #09006C;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 50px;
 }
 
 
