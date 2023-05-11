@@ -40,15 +40,19 @@ h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: clamp(3rem, 5vw, 6vw);
+    font-size: clamp(2.3rem, 5vw, 6vw);
     line-height: 135px;
     padding-left: 20px;
     margin: auto;
     filter:
         drop-shadow(5px 0 #000)
+        drop-shadow(2px 0 #000)
         drop-shadow(-5px 0 #000)
+        drop-shadow(-2px 0 #000)
         drop-shadow(0 5px #000)
-        drop-shadow(0 -5px #000);
+        drop-shadow(0 2px #000)
+        drop-shadow(0 -2px #000000)
+        drop-shadow(0 -5px #000000);
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -249,7 +253,7 @@ nav a:hover button {
 .homepage h3 {
     font-family: 'Alegreya Sans', Helvetica, sans-serif;
     text-align: center;
-    font-size: clamp(30pt, 5vw, 40pt);
+    font-size: clamp(26pt, 5vw, 40pt);
     margin: 15px 0 25px 0;
     padding: 0 5%;
 }
@@ -468,6 +472,10 @@ footer {
 
 
 
+
+    .about-main {
+        width: 100%;
+    }
 
     .about-main p {
         padding: 0 50px;
