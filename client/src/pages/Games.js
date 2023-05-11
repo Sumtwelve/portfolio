@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Games = () => {
     return (
         <main>
-            <h1>Games</h1>
+            <h2>Games</h2>
         </main>
     )
 };

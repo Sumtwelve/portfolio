@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Webdev = () => {
     return (
         <main>
-            <h1>Webdev</h1>
+            <h2>Webdev</h2>
         </main>
     )
 };

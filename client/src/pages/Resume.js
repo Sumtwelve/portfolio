@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Resume = () => {
     return (
         <main>
-            <h1>Resume</h1>
+            <h2>Resume</h2>
         </main>
     )
 };
