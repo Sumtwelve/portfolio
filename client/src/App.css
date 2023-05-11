@@ -60,13 +60,15 @@ h1 {
 }
 
 h2 {
-    font-family: 'Aleo'
+    font-family: 'Aleo';
+    text-align: center;
 }
 
 h3,
 h4,
 p {
-    font-family: 'Alegreya Sans'
+    font-family: 'Alegreya Sans';
+    text-align: center;
 }
 
 .back-btn {
