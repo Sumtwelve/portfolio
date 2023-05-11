@@ -11,9 +11,10 @@ import NotFound from './pages/NotFound';
 import Resume from './pages/Resume';
 import Webdev from './pages/Webdev';
 
-// header is always visible
+// header and footer always visible
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
             element={<NotFound />}
           />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

@@ -4,7 +4,7 @@ import React from 'react';
 const About = () => {
     return (
         <main>
-            <h1>About</h1>
+            <h2>About</h2>
             <p>
                 Hello! My name is Noah Nielsen. I'm a computer nerd who's ready to enter
                 the professional world. I'm also a self-taught musician, but right now I'm
@@ -29,23 +29,36 @@ const About = () => {
             </p>
             <p>
                 Somewhere within the same time period that I'd gotten my DSi, my best friend
-                introduced me to the game <i>Minecraft</i>. Maybe I thought it was an
-                entrancing game, but the best part about it was playing with him. Every idea
-                he had he flawlessly executed, and I quickly fell in love with the experience.
-                I became somewhat obsessed with the game. Everything about it or related to
-                it was now my favorite thing. For example, Sweden became my favorite country,
-                because even though I'd never been there, I knew that's where <i>Minecraft</i>'s
-                creator was from. And as another example, a peculiar new word joined my
-                vocabulary: <i>Java</i>. The 'programming language' the game was written in.
-                I can't remember now what exactly pushed me to do it, but I started looking
-                up Java tutorials online. Maybe I thought that if someone could write a game
-                like <i>Minecraft</i> in Java, then I could make cool stuff too.
+                introduced me to the game <i>Minecraft</i>. It was an
+                entrancing game, and I quickly fell in love with it. I learned everything I could
+                about it. I found out its creator was from Sweden, so Sweden became my favorite
+                country. And I found out that the game was written in a 'programming language'
+                called <i>Java</i>. I can't remember now what exactly pushed me to do it, but
+                I started looking up Java tutorials online. Maybe I thought that if someone
+                could write a game like <i>Minecraft</i> in Java, then I could make cool
+                stuff with it too.
             </p>
             <p>
-                My first major project didn't come about because of a coding challenge I'd
-                found anywhere, but rather as a personal interest of mine. At the time, I
-                was very interested in editing the game files of my copy
-                of <i>Harry Potter and the Chamber of Secrets</i> for PC.
+                My first major project in Java, which also turned out to be the largest endeavor
+                I'd ever undertaken, came about because of another obscure obsession I'd acquired.
+                When I was about 13, I was very interested in messing with the game files of my
+                copy of <i>Harry Potter and the Chamber of Secrets</i> for PC.
+                It's an old game that doesn't bother hiding its inner workings, and I discovered
+                you could actually edit the game's cutscenes! However, editing them manually in
+                Notepad was very tedious. I wondered if I could write a program that would make
+                it easier...
+            </p>
+            <p>
+                That's what I set out to do: Create a text editor to facilitate hacking an
+                11-year-old Harry Potter game. It proved far more difficult than those online
+                Java tutorials could have really prepared me for, but I did the best I could
+                with what I knew, and after 3 or so years of on-and-off work, and lots of
+                face-to-face encounters with programmer's dread, I finally had it. My Harry
+                Potter cutscene editor. It was (and still is) one of the proudest moments
+                of my life. Not because I could finally hack this stupid game, but because
+                I set my mind to something and actually accomplished it. That, I think, is
+                why I love programming. It is extremely rewarding when you push through and
+                figure something out, something you maybe thought you could never do.
             </p>
             <p>
                 After trying different varieties of music-making software, today I usually

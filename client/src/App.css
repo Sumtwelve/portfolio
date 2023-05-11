@@ -1,3 +1,15 @@
+:root {
+    --select: #2ac9e662;
+}
+
+::-moz-selection {
+    background: var(--select);
+}
+  
+::selection {
+    background: var(--select);
+}
+
 html {
     height: 100%;
 }
@@ -18,19 +30,50 @@ body {
     height: 100%;
 }
 
-p {
-    font-size: 16pt;
-    padding: 0 50px;
+h1 {
+    font-family: 'Aleo', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f0f0f0;
+    font-size: clamp(4.3rem, 5vw, 6vw);
+    line-height: 135px;
+    padding-left: 20px;
+    margin: auto;
+    /* Credit to this outside text outline code goes to
+    Stack Overflow user Ryall */
+    text-shadow:
+    -6px -6px 0 #000,
+     0   -6px 0 #000,
+     6px -6px 0 #000,
+     6px  0   0 #000,
+     6px  6px 0 #000,
+     0    6px 0 #000,
+    -6px  6px 0 #000,
+    -6px  0   0 #000;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menu-header {
+    display: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 button {
-    height: 8vh;
+    height: 60px;
     width: calc(100% / 6);
     border: none;
-    font-size: clamp(2rem, 2.2vw, 3.5rem);
+    font-size: clamp(1.3rem, 2.2vw, 3.5rem);
     text-shadow: rgba(0,0,0,0.5) 4px 4px 2px;
     cursor: pointer;
     transition: transform 0.2s ease;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .btn-behind {
@@ -40,8 +83,8 @@ button {
     z-index: -1;
 }
 
-.top-bar a:hover button {
-    transform: translateY(20px);
+nav a:hover button {
+    transform: translateY(15px);
 }
 
 /* Getting colors onto each link */
@@ -108,44 +151,41 @@ button {
 }
 
 
-/* HOMEPAGE STYLING */
+  /**************************/
+ /* HOMEPAGE STYLING BELOW */
+/**************************/
 
 
 .header {
+    display: flex;
+    align-items: center;
     max-height: 125px;
 }
 
 .banner-wrapper {
     height: 125px;
+    width: 100%;
     background-image:
-        linear-gradient(to right, #000, rgba(0,0,0,0) 40%),
+        linear-gradient(to right, #000, rgba(0,0,0,0) 60%),
         url('../public/images/banner.jpg');
     background-size: cover;
 }
 .banner-img {
     height: 100%;
+    z-index: -2;
 }
 
-h1 {
+.avatar-img {
     position: absolute;
-    top: 0;
-    color: #f0f0f0;
-    font-size: clamp(5rem, 6vw, 7vw);
-    text-shadow: 5px 5px black;
-    margin: 0 10px;
-}
-
-.avatar-box {
-    height: 35vh;
-    width: 35vh;
-    min-height: 35vh;
-    min-width: 35vh;
+    right: 20px;
+    height: 90px;
+    border: 5px solid white;
     border-radius: 50%;
-    overflow: hidden;
+    box-shadow: 0 5px 10px #000;
 }
 
-img {
-    height: 100%;
+.avatar-img-body-home {
+    display: none;
 }
 
 .divider-line {
@@ -155,49 +195,136 @@ img {
     border-right: 1px solid #a3a3a3;
 }
 
-h2 {
-    color: #656565;
-    font-size: clamp(1.5rem, 2vw, 4vw);
-    margin: 0;
+.homepage h2 {
+    color: #383838;
+    text-align: center;
+    font-family: 'Fahkwang', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: clamp(4.5rem, 8vw, 8rem);
+    margin: 30px;
 }
 
-.welcome-box {
-    margin: 20px;
-    max-width: 150px;
+.homepage h3 {
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+    text-align: center;
+    font-size: clamp(30pt, 5vw, 40pt);
+    margin: 15px 0 25px 0;
+    padding: 0 5%;
 }
 
-@media screen and (max-width: 975px) {
-    
-    button {
-        height: clamp(70px, 3vw, 5vw);
-        font-size: clamp(1.7rem, 5.5vw, 3rem);
+.homepage p {
+    font-family: 'Alegreya Sans', Helvetica, sans-serif;
+    text-align: center;
+    font-size: clamp(16pt, 2.5vw, 24pt);
+    padding: 0 50px;
+    margin: 15px 0;
+}
+
+.homepage-ext-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 50px;
+    margin-top: 45px;
+}
+.ext-link {
+    display: inline-block;
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+}
+.ext-link-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #09006C;
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .menu-display {
+        display: initial;
     }
 
-    .top-bar a:hover button {
-        transform: none;
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60px;
+        background: linear-gradient(to right, #45A8BD, #8F2985);
+        cursor: pointer;
     }
-    .bottom-bar a:hover button,
-    .bottom-bar-home a:hover button {
-        transform: none;
+    .menu-header:hover h3 {
+        transform: scale(1.1);
     }
 
-    .divider-line {
+    nav a {
+        display: none;
+        width: 100%;
+        z-index: 2;
+    }
+
+    nav button {
+        width: 100%;
+        transition: all 0.2s ease;
+    }
+
+    nav a:hover button {
+        transform: none;
+        width: 90%;
+    }
+
+    .btn-behind {
+        position: absolute;
+        left: 90%;
+        height: 60px;
+        width: 10%;
+    }
+
+    .menu-header {
+        align-self: flex-start;
+        display: flex;
+        max-height: 60px;
+        width: 100%;
+    }
+    .menu-text {
+        color: whitesmoke;
+        font-size: 24pt;
+        line-height: 54px;
+        margin: 0;
+        transform-origin: left;
+        transition: transform 0.4s ease;
+    }
+    .menu-btn {
+        color: whitesmoke;
+        height: 36px;
+        padding: 12px 16px;
+        margin: 0;
+    }
+
+    .avatar-img,
+    .avatar-img-top-home {
         display: none;
     }
-
-    .middle {
-        height: 100%;
-        flex-direction: column;
-        text-align: center;
-        margin-top: clamp(10px, 5vh, 9vh);
+    .avatar-img-body-home {
+        display: block;
+        position: static;
+        margin: 10px auto;
+        height: clamp(100px, 25vw, 150px);
     }
 
-    h1 {
-        margin-top: clamp(5px, 2vh, 3vh);
-        font-size: clamp(50pt, 11vw, 11vw);
-    }
-
-    h2 {
-        font-size: clamp(1.5rem, 3vw, 6vw)
+    .homepage h2 {
+        margin: 5px;
     }
 }
