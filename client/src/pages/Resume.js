@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import BackBtn from '../components/BackBtn';
 
 const Resume = () => {
     return (
         <main>
             <h2>Resume</h2>
+            <BackBtn />
         </main>
     )
 };

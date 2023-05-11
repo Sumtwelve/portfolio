@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import BackBtn from '../components/BackBtn';
 
 const NotFound = () => {
     return (
         <main>
             <h2>NotFound</h2>
+            <BackBtn />
         </main>
     )
 };

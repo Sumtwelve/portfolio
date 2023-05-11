@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import BackBtn from '../components/BackBtn';
 
 const About = () => {
     return (
@@ -72,7 +72,7 @@ const About = () => {
                 <p style={{textAlign: 'center', marginTop: '50px'}}>
                     Thanks for reading <span style={{padding: '0 10px'}}>♥</span> This means a lot to me.
                 </p>
-                <button type='button' className='back-btn'>&larr; Go Back</button>
+                <BackBtn />
             </main>
         </>
     )

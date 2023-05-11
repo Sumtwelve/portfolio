@@ -67,17 +67,16 @@ p {
 
 .back-btn {
     display: block;
-    position: relative;
+    z-index: 0;
     font-size: 20pt;
     text-shadow: none;
     font-family: 'Alegreya Sans', sans-serif;
     color: whitesmoke;
     background: -webkit-linear-gradient(0deg, #0044ff, #be0075);
+    width: 175px;
     margin: 0 auto;
     border-radius: 15px;
     transition: all 1.1s ease;
-    overflow: hidden;
-    z-index: 0;
 }
 .back-btn:hover {
     transform: scale(1.05);
@@ -223,7 +222,6 @@ nav a:hover button {
     font-size: 20pt;
     padding: 6px 12px 6px 12px;
     border-radius: 10px;
-    z-index: -1;
 }
 .avatar-img:hover + span {
     display: initial;
@@ -268,7 +266,7 @@ nav a:hover button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px 50px;
+    gap: 25px 50px;
     margin-top: 45px;
     padding: 0 20px 75px 20px;
 }
