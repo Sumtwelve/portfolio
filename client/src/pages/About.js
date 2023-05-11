@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BackBtn from '../components/BackBtn';
 
 const About = () => {
@@ -8,17 +9,25 @@ const About = () => {
             <main className='about-main'>
                 <h2>About</h2>
                 <p>
-                    Hello! My name is Noah Nielsen. I'm a computer nerd who's ready to enter
-                    the professional world. I'm also a self-taught musician, but right now I'm
-                    just ready to keep that as a hobby :)</p>
-                <p>
-                    I made this website to serve as a portfolio for my web development work,
-                    but also as a place where my friends can see the stuff I've made.
+                    Hello! My name is Noah Nielsen. I'm just another creative who's ready to start
+                    his career. I write web apps and music mainly, and I've got a lot to learn
+                    about both, but I'm loving the journey so far.
                 </p>
                 <p>
                     I believe technology has the power to make life easier and more enjoyable
                     for everyone. I also believe everyone should be able to learn about tech
-                    and know how our modern world actually works.
+                    and fully understand how our modern world works.
+                </p>
+                <h3>Me & You</h3>
+                <p>
+                    If you're looking for a web developer, I would make a good intern. You
+                    can <Link to="/webdev">browse my Web Developer
+                    portfolio</Link> to get an idea of the skills I have and how I can
+                    benefit your workforce. I'm open to learning new things and ready to
+                    make awesome apps with you! Send me a message
+                    on <a href="https://www.linkedin.com/in/noah-nielsen-22b2251a6/"
+                    target='_blank' rel='noreferrer'>LinkedIn</a> or check out
+                    the <Link to="/contact">Contact</Link> page for more options.
                 </p>
                 <h3>My story</h3>
                 <p>
@@ -40,24 +49,22 @@ const About = () => {
                 </p>
                 <p>
                     And I think I was right. My first major project in Java, which also turned out to
-                    be the largest endeavor
-                    I'd ever undertaken, came about because of another obscure obsession I'd acquired.
-                    When I was about 13, I was very interested in messing with the game files of my
-                    copy of <i>Harry Potter and the Chamber of Secrets</i> for PC.
-                    It's an old game that doesn't bother hiding its inner workings, and I discovered
-                    you could actually edit the game's cutscenes. It was a lot of fun, but editing
-                    them manually in Notepad was very tedious. I wondered if I could write a program
-                    that would make it easier...
+                    be the largest endeavor I'd ever undertaken, came about because of another
+                    obscure obsession I'd acquired. When I was about 13, I was very interested
+                    in messing with the game files of my copy of <i>Harry Potter and the Chamber
+                    of Secrets</i> for PC. It's an old game that doesn't bother hiding its inner
+                    workings, and I discovered you could actually edit the game's cutscenes.
+                    It was a lot of fun, but editing them manually in Notepad was very tedious.
+                    I wondered if I could write a program that would make it easier...
                 </p>
                 <p>
                     So that's what I set out to do: Create a text editor to facilitate hacking an
                     11-year-old Harry Potter game. It proved far more difficult than those online
-                    Java tutorials could have really prepared me for, but I did the best I could
-                    with what I knew, and after 3 or so years of on-and-off work, and lots of
-                    programmer's dread, I finally had it. My Harry Potter cutscene editor.
-                    It was (and still is) one of the proudest moments of my life. Not because
-                    I could finally hack this stupid game, but because I set my mind to something
-                    and actually accomplished it.
+                    Java tutorials could have prepared me for, but I did the best I could
+                    with what I knew, and after 3 or so years of on-and-off work, I finally
+                    had it. My Harry Potter cutscene editor. It was (and still is) one of the
+                    proudest moments of my life. Not because I could finally hack this obscure
+                    game, but because I set my mind to something and actually accomplished it.
                 </p>
                 <p>
                     That is why I love programming. It is extremely rewarding to push through
