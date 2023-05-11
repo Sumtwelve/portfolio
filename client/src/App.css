@@ -158,7 +158,10 @@ nav a:hover button {
 }
 .about-behind {
     position: absolute;
-    width: calc(100% / 6);
+    /* idk why, but when there's a vertical scroll bar present,
+    this span sometimes renders one pixel short. This seems
+    to fix that. */
+    width: calc(100% / 6 + 1px);
     z-index: -2;
     background-color: #364da0;
 }
