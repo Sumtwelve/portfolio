@@ -33,7 +33,7 @@ function App() {
             element={<Music />}
           />
           <Route 
-            path="/webdev"
+            path="/dev"
             element={<Webdev />}
           />
           <Route 
