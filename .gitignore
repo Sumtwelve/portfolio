@@ -1,10 +1,13 @@
+.DS_Store
+
 node_modules/
 /node_modules
 package-lock.json
-.DS_Store
+
 npm-debug.log
+
 /*.env
-wireframes
-dist
-prototype
+
 build
+
+insert-scripts/
