@@ -1,28 +1,43 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Sumtwelve's official portfolio website.",
-  "main": "server/server.js",
+  "name": "client",
+  "main": "index.js",
   "scripts": {
-    "build": "cd client && npm run build",
-    "client": "cd client && npm start",
-    "develop": "concurrently \"cd server && npm run server\" \"cd client && npm run start\"",
-    "dev:watch": "concurrently \"cd server && npm run watch\" \"cd client && npm run start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "start": "npm run build && cd server && node server.js",
-    "test": "echo \"no test specified\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sumtwelve/w2-portfolio.git"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "Sumtwelve",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Sumtwelve/w2-portfolio/issues"
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^3.3.1"
   },
-  "homepage": "https://github.com/Sumtwelve/w2-portfolio#readme",
-  "devDependencies": {
-    "concurrently": "^8.0.1"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

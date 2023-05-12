@@ -40,7 +40,7 @@ const Navbar = () => {
                 <span className='btn-behind music-behind'></span>
                 <button type="button" className="music-btn">MUSIC</button>
             </Link>
-            <Link to='/webdev' className='react-link link-webdev' onClick={toggleMenu}>
+            <Link to='/dev' className='react-link link-webdev' onClick={toggleMenu}>
                 <span className='btn-behind webdev-behind'></span>
                 <button type="button" className='webdev-btn'>WEB DEV</button>
             </Link>
