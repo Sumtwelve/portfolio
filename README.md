@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Description
-I want this to be a place where all of my creative work can be found by anyone on the internet. As my skillset grows, so will this portfolio.
+A website made to showcase my skills as a musician and as a developer.
 
 ## Visit
 Take a look for yourself! [https://www.sumtwelve.net](https://www.sumtwelve.net)
