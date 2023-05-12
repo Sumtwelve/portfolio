@@ -19,8 +19,11 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^3.3.1"
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "inquirer": "^9.2.2",
+    "jsmediatags": "^3.9.7"
   },
   "eslintConfig": {
     "extends": [
