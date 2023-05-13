@@ -20,8 +20,8 @@ const About = () => {
                 </p>
                 <h3>Me & You</h3>
                 <p>
-                    If you're looking for a web developer, I would make a good intern. You
-                    can <Link to="/dev">browse my Web Developer
+                    If you're looking for a web developer, I would make a good intern or
+                    junior dev. You can <Link to="/dev">browse my Web Developer
                     portfolio</Link> to get an idea of the skills I have and how I can
                     benefit your workforce. I'm open to learning new things and ready to
                     make awesome apps with you! Send me a message
