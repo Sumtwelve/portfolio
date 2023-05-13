@@ -9,7 +9,7 @@ const BackBtn = () => {
             type='button'
             className='back-btn'
             onClick={() => navigate("/")}>
-                &larr; Go Back
+                🏠 Home
         </button>
     );
 };
