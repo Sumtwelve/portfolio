@@ -299,6 +299,45 @@ nav a:hover button {
 
 
 
+  /*************************************/
+ /* ALL SUBPAGE DEFAULT STYLING BELOW */
+/*************************************/
+
+.subpage-main {
+    margin: 0 auto;
+    background:
+        -webkit-linear-gradient(
+            #000000,
+            rgb(255, 255, 255));
+    color: whitesmoke;
+    width: clamp(15px, 80%, 900px);
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.subpage-main p {
+    padding: 0 clamp(25px, 5vw, 450px);
+    font-size: clamp(18pt, 4vw, 20pt);
+}
+.subpage-main p a {
+    color: #00eecc;
+}
+
+.subpage-main h2 {
+    text-align: center;
+    font-size: 48pt;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.subpage-main h3 {
+    text-align: center;
+    font-size: 30pt;
+}
+
+
+
+
   /***********************/
  /* MUSIC STYLING BELOW */
 /***********************/
@@ -311,6 +350,13 @@ nav a:hover button {
  /* WEB DEV STYLING BELOW */
 /*************************/
 
+.webdev-main {
+    background:
+        -webkit-linear-gradient(
+            var(--webdev),
+            #831e56,
+            #d3b140);
+}
 
 
 
@@ -327,43 +373,12 @@ nav a:hover button {
  /* ABOUT STYLING BELOW */
 /***********************/
 
-.about-nav-joiner {
-    display: block;
-    height: 10px;
-    width: 100%;
-}
-
 .about-main {
-    margin: 0 auto;
     background:
         -webkit-linear-gradient(
             var(--about),
             #1e6f83,
-            #3924ac);
-    color: whitesmoke;
-    width: clamp(15px, 80%, 900px);
-    padding-top: 40px;
-    padding-bottom: 100px;
-}
-
-.about-main p {
-    padding: 0 clamp(25px, 5vw, 450px);
-    font-size: clamp(18pt, 4vw, 20pt);
-}
-.about-main p a {
-    color: #00eecc;
-}
-
-.about-main h2 {
-    text-align: center;
-    font-size: 48pt;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.about-main h3 {
-    text-align: center;
-    font-size: 30pt;
+            #d3255f);
 }
 
 
@@ -484,11 +499,11 @@ footer {
 
 
 
-    .about-main {
+    .subpage-main {
         width: 100%;
     }
 
-    .about-main p {
+    .subpage-main p {
         font-size: 16pt;
         line-height: 1.4;
         padding: 0 30px;

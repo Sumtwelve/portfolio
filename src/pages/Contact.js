@@ -3,7 +3,7 @@ import BackBtn from '../components/BackBtn';
 
 const Contact = () => {
     return (
-        <main>
+        <main className='subpage-main contact-main'>
             <h2>Contact</h2>
             <BackBtn />
         </main>

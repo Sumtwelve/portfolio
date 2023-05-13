@@ -3,7 +3,7 @@ import BackBtn from '../components/BackBtn';
 
 const Music = () => {
     return (
-        <main>
+        <main className='subpage-main music-main'>
             <h2>Music</h2>
             <BackBtn />
         </main>

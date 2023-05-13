@@ -6,7 +6,7 @@ const About = () => {
     return (
         <>
             {/* <span className='about-nav-joiner' /> */}
-            <main className='about-main'>
+            <main className='subpage-main about-main'>
                 <h2>About</h2>
                 <p>
                     Hello! My name is Noah Nielsen. I'm just another creative who's ready to start

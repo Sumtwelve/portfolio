@@ -4,8 +4,8 @@ import BackBtn from '../components/BackBtn';
 
 const Webdev = () => {
     return (
-        <main>
-            <h2>My Web Development Portfolio</h2>
+        <main className='subpage-main webdev-main'>
+            <h2>Web Developer Portfolio</h2>
             <p>
                 I've been interested in web development for about a year now. I think the web
                 is a fantastic place to host and run applications. Check out
