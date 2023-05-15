@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// devData JSON structure:
+// data JSON structure:
 // id: lowercase hyphenated version of title, used for react router
 // title: name of the project
 // description: a short description of the project
@@ -11,24 +11,24 @@ import { Link } from 'react-router-dom';
 // url (optional): the URL where the project is deployed. Not all projects have this
 // github: URL of the project's GitHub page
 
-const WorkCard = ({ devData }) => {
+const WorkCard = ({ data }) => {
 
     let visitAnchor = null;
-    if (devData.url) {
-        visitAnchor = ( <a href={devData.url} className='visit-link' target='_blank' rel='noreferrer'>VISIT &rarr;</a> );
+    if (data.url) {
+        visitAnchor = ( <a href={data.url} className='visit-link' target='_blank' rel='noreferrer'>VISIT &rarr;</a> );
     }
-
+    
     return(
         <div className='work-card'>
             {visitAnchor}
             <div className='work-card-body'>
-                <Link to={`${devData.id}`} className='work-link' devData={devData}>
+                <Link to={`${data.id}`} className='work-link' data={data}>
                     <div className='work-card-img-box'>
-                        <img src={devData.thumbnail} alt='' />
+                        <img src={data.thumbnail} alt={`A screenshot of the ${data.title} app.`} />
                     </div>
-                    <h4>{devData.title}</h4>
-                    <p className='work-card-desc'>{devData.description}</p>
-                    <p className='work-card-tech'>{devData.technologies.join(' / ')}</p>
+                    <h4>{data.title}</h4>
+                    <p className='work-card-desc'>{data.description}</p>
+                    <p className='work-card-tech'>{data.technologies.join(' / ')}</p>
                 </Link>
             </div>
         </div>

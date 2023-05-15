@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { useParams } from 'react-router-dom'
+import BackBtn from '../components/BackBtn';
 const devData = require('../data/devWorks.json');
 
 // PATH: /dev/:workId
@@ -12,10 +13,13 @@ const devData = require('../data/devWorks.json');
 const Work = () => {
 
     const { workId } = useParams();
+    const data = devData[workId];
 
     return (
         <main>
-            <h2>One song:</h2>
+            <h2>{data.title}</h2>
+
+            <BackBtn />
         </main>
     )
 };

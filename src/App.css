@@ -379,7 +379,8 @@ nav a:hover button,
         -webkit-linear-gradient(
             var(--webdev),
             #831e56,
-            #d3b140);
+            #ee8e69 90%,
+            #3d25a8);
 }
 
 .work-card {
@@ -388,31 +389,86 @@ nav a:hover button,
 }
 
 .work-card-body {
-    background-color: rgb(0, 255, 34);
+    color: whitesmoke;
+    background: -webkit-linear-gradient(#904bff, #25239c);
     height: 100%;
     padding: 10px;
     border-radius: 25px;
     z-index: 2;
 }
 
-.work-card a {
-    text-decoration: none;
-    color: blue;
-    background-color: red;
+h4 {
+    font-size: 38pt;
+    margin: 20px;
+    transition: color 0.2s ease;
 }
+.work-link:hover h4 {
+    color: rgb(255, 171, 150);
+}
+
+p.work-card-desc {
+    font-size: 24pt;
+}
+
+p.work-card-tech {
+    font-size: 20pt;
+    color: #c2c2c2;
+}
+
+.work-card a,
 .work-card a:visited {
-    color: blue;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.work-card-img-box {
+    height: 75%;
+    overflow: hidden;
+}
+
+.work-card-img-box img {
+    width: 100%;
+    transition: filter 0.5s ease;
+}
+.work-link:hover img {
+    filter: blur(3px);
+}
+
+.work-card-img-box::after {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: 0;
+    background:
+        url('../public/images/magnifying-glass.png')
+        no-repeat
+        center/15%;
+    filter: opacity(0%);
+    height: inherit;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.work-link:hover .work-card-img-box::after {
+    filter: opacity(70%);
 }
 
 .work-card a.visit-link {
     position: absolute;
     right: 0;
-    bottom: -45px;
+    bottom: -35px;
+    font-size: 20pt;
+    font-weight: bolder;
+    color: rgb(241, 241, 241);
+    background: -webkit-linear-gradient(#eb2366, #ffa970);
     width: 10vw;
-    background-color: white;
-    padding: 40px 0 10px 0;
-    border-radius: 0 0 10px 10px;
-    /* z-index: -1; */
+    padding: 15px;
+    border-radius: 10px;
+    text-shadow: 3px 3px 5px black;
+    transition: transform 0.5s ease;
+    transform-origin: bottom right;
+}
+.visit-link:hover {
+    transform: scale(1.05);
 }
 
 
@@ -531,9 +587,9 @@ footer {
 
     .btn-behind {
         position: absolute;
-        left: 90%;
+        left: 0;
         height: 70px;
-        width: 10%;
+        width: 100%;
     }
 
     .menu-header {
