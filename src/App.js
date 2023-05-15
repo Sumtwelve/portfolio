@@ -2,18 +2,20 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import About from './pages/About'; // About page
-import Album from './pages/Album'; // page for viewing one Album
-import Contact from './pages/Contact'; // Contact page
-import Games from './pages/Games'; // Games page
-import Game from './pages/Game'; // page for viewing/playing one Game
-import Home from './pages/Home'; // Home page 
-import Music from './pages/Music'; // Music page
+import Home from './pages/Home';         // Home page 
+import Music from './pages/Music';       // Music page
+import Webdev from './pages/Webdev';     // Web Developer Portfolio page
+import Games from './pages/Games';       // Games page
+import About from './pages/About';       // About page
+import Resume from './pages/Resume';     // Resume page
+import Contact from './pages/Contact';   // Contact page
+
+import Song from './pages/Song';         // page for viewing one Song
+import Album from './pages/Album';       // page for viewing one Album
+import Game from './pages/Game';         // page for viewing/playing one Game
+import Work from './pages/Work';         // details page for a single app/project
+
 import NotFound from './pages/NotFound'; // 404 page
-import Resume from './pages/Resume'; // Resume page
-import Song from './pages/Song'; // page for viewing one Song
-import Webdev from './pages/Webdev'; // Web Developer Portfolio page
-import Work from './pages/Work'; // details page for one app/project (one Work) I've made
 
 // Header, navbar, and footer are always visible.
 import Header from './components/Header';
@@ -37,11 +39,11 @@ function App() {
             element={<Music />}
           />
           <Route
-            path="/music/album/:albumId"
+            path="/music/albums/:albumId"
             element={<Album />}
           />
           <Route
-            path="/music/song/:songId"
+            path="/music/songs/:songId"
             element={<Song />}
           />
 
@@ -50,7 +52,7 @@ function App() {
             element={<Webdev />}
           />
           <Route 
-            path="/dev/projects/:workId"
+            path="/dev/:workId"
             element={<Work />}
           />
 
