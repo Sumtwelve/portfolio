@@ -5,7 +5,7 @@
         "description": "A simple single-day planner app.",
         "description-long": "",
         "thumbnail": "../images/",
-        "technologies": ["HTML"],
+        "technologies": ["HTML", "CSS", "JavaScript"],
         "url": "https://sumtwelve.github.io/day-planner/",
         "github": "https://github.com/Sumtwelve/day-planner"
     },
