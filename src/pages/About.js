@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 import BackBtn from '../components/BackBtn';
 
 const About = () => {
+
+    document.title = "About // Sumtwelve"
+
     return (
         <>
             {/* <span className='about-nav-joiner' /> */}
-            <main className='about-main'>
+            <main className='subpage-main about-main'>
                 <h2>About</h2>
                 <p>
                     Hello! My name is Noah Nielsen. I'm just another creative who's ready to start
@@ -20,9 +23,9 @@ const About = () => {
                 </p>
                 <h3>Me & You</h3>
                 <p>
-                    If you're looking for a web developer, I would make a good intern. You
-                    can <Link to="/dev">browse my Web Developer
-                    portfolio</Link> to get an idea of the skills I have and how I can
+                    If you're looking for a web developer, I would make a good intern or
+                    junior dev. You can check out my <Link to="/dev">Web Developer
+                    portfolio</Link> or the <Link to="/resume">Resume page</Link> to get an idea of the skills I have and how I can
                     benefit your workforce. I'm open to learning new things and ready to
                     make awesome apps with you! Send me a message
                     on <a href="https://www.linkedin.com/in/noah-nielsen-22b2251a6/"

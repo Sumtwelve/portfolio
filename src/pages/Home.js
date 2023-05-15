@@ -1,6 +1,9 @@
 import React from 'react';
 
 const Home = () => {
+
+    document.title = "Noah Nielsen // Sumtwelve";
+
     return (
         <div className='homepage'>
             <img className='avatar-img-body-home avatar-img' src="./images/avatar-circle.png" alt="A simple icon representing the artist Sumtwelve."></img>
