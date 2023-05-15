@@ -51,10 +51,13 @@ function App() {
             path="/dev"
             element={<Webdev />}
           />
-          <Route 
+          {/* There used to be subpages for Web Dev,
+          but I decided that they crowded up the UX a little too much.
+          Kept here in case I find a need for them. */}
+          {/* <Route 
             path="/dev/:workId"
             element={<Work />}
-          />
+          /> */}
 
           <Route 
             path="/games"

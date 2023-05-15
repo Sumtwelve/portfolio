@@ -1,28 +1,58 @@
 {
-    "day-planner": {
-        "id": "day-planner",
-        "title": "Online Day Planner",
-        "description": "A simple single-day planner app.",
-        "description-long": "",
-        "thumbnail": "images/thumbnails/day-planner-thumb.jpg",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "url": "https://sumtwelve.github.io/day-planner/",
-        "github": "https://github.com/Sumtwelve/day-planner"
+    
+    "weather-wherever": {
+        "id": "weather-wherever",
+        "title": "The Weather Wherever",
+        "description": "Get weather conditions and forecasts for any city in the world.",
+        "descriptionLong": "this is the long description",
+        "thumbnail": "images/thumbnails/weather-whenever-thumb.jpg",
+        "technologies": ["HTML", "CSS", "JavaScript", "REST API"],
+        "url": "https://sumtwelve.github.io/weather-wherever/",
+        "github": "https://github.com/Sumtwelve/weather-wherever"
+    },
+    "social-media-api": {
+        "id": "social-media-api",
+        "title": "Social Media API",
+        "description": "An example API backend for a social networking site.",
+        "descriptionLong": "",
+        "thumbnail": "images/thumbnails/social-api-thumb.jpg",
+        "technologies": ["Node.js", "Express.js", "MongoDB", "REST API"],
+        "github": "https://github.com/Sumtwelve/social-media-api"
     },
     "ecommerce-backend": {
         "id": "ecommerce-backend",
         "title": "E-Commerce Backend",
         "description": "A proof-of-concept API for a simple ecommerce website.",
-        "description-long": "",
+        "descriptionLong": "",
         "thumbnail": "images/thumbnails/ecommerce-backend-thumb.jpg",
         "technologies": ["Node.js", "Express.js", "MySQL", "REST API"],
         "github": "https://github.com/Sumtwelve/ecommerce-backend"
+    },
+    "note-taker": {
+        "id": "note-taker",
+        "title": "Note Taker",
+        "description": "A simple web app for saving plain-text notes.",
+        "descriptionLong": "",
+        "thumbnail": "images/thumbnails/note-taker-thumb.jpg",
+        "technologies": ["HTML", "CSS", "Node.js", "Express.js"],
+        "url": "https://sumtwelve-note-taker.herokuapp.com/notes",
+        "github": "https://github.com/Sumtwelve/note-taker"
+    },
+    "day-planner": {
+        "id": "day-planner",
+        "title": "Online Day Planner",
+        "description": "A simple single-day planner app.",
+        "descriptionLong": "",
+        "thumbnail": "images/thumbnails/day-planner-thumb.jpg",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "url": "https://sumtwelve.github.io/day-planner/",
+        "github": "https://github.com/Sumtwelve/day-planner"
     },
     "employee-tracker": {
         "id": "employee-tracker",
         "title": "Employee Tracker",
         "description": "A command-line CMS for managing your departments and employees.",
-        "description-long": "",
+        "descriptionLong": "",
         "thumbnail": "images/thumbnails/employee-tracker-thumb.jpg",
         "technologies": ["Node.js", "Express.js", "MySQL"],
         "github": "https://github.com/Sumtwelve/employee-tracker"
@@ -31,7 +61,7 @@
         "id": "fate",
         "title": "FATE",
         "description": "A JavaScript-flavored text editor presented as a PWA.",
-        "description-long": "",
+        "descriptionLong": "",
         "thumbnail": "images/thumbnails/fate-thumb.png",
         "technologies": ["IndexedDB", "Node.js", "Express.js", "Webpack", "Workbox"],
         "url": "https://fate-editor.herokuapp.com/",
@@ -41,48 +71,19 @@
         "id": "js-quiz",
         "title": "JavaScript Quiz",
         "description": "A one-minute JavaScript trivia quiz.",
-        "description-long": "",
+        "descriptionLong": "",
         "thumbnail": "images/thumbnails/js-quiz-thumb.jpg",
-        "technologies": ["Node.js"],
+        "technologies": ["Node.js", "jQuery"],
         "url": "https://sumtwelve.github.io/javascript-quiz/",
         "github": "https://github.com/Sumtwelve/javascript-quiz"
-    },
-    "note-taker": {
-        "id": "note-taker",
-        "title": "Note Taker",
-        "description": "A simple web app for saving plain-text notes.",
-        "description-long": "",
-        "thumbnail": "images/thumbnails/note-taker-thumb.jpg",
-        "technologies": ["HTML", "CSS", "Node.js", "Express.js"],
-        "url": "https://sumtwelve-note-taker.herokuapp.com/notes",
-        "github": "https://github.com/Sumtwelve/note-taker"
     },
     "readme-generator": {
         "id": "readme-generator",
         "title": "README Generator",
         "description": "A CLI app for generating professional READMEs.",
-        "description-long": "",
+        "descriptionLong": "",
         "thumbnail": "images/thumbnails/readme-gen-thumb.jpg",
         "technologies": ["JavaScript"],
         "github": "https://github.com/Sumtwelve/readme-generator"
-    },
-    "social-media-api": {
-        "id": "social-media-api",
-        "title": "Social Media API",
-        "description": "An example API backend for a social networking site.",
-        "description-long": "",
-        "thumbnail": "images/thumbnails/social-api-thumb.jpg",
-        "technologies": ["Node.js", "Express.js", "MongoDB", "REST API"],
-        "github": "https://github.com/Sumtwelve/social-media-api"
-    },
-    "weather-wherever": {
-        "id": "weather-wherever",
-        "title": "The Weather Wherever",
-        "description": "Get weather conditions and forecasts for any city in the world.",
-        "description-long": "this is the long description",
-        "thumbnail": "images/thumbnails/weather-whenever-thumb.jpg",
-        "technologies": ["HTML", "CSS", "JavaScript", "REST API"],
-        "url": "https://sumtwelve.github.io/weather-wherever/",
-        "github": "https://github.com/Sumtwelve/weather-wherever"
     }
 }

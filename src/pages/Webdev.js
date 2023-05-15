@@ -21,8 +21,8 @@ const Webdev = () => {
                 for more info on my education and skills in this field.
             </p>
             <p>
-                Click on the images to read more about each project, or click on the
-                "VISIT" button to see the deployed app!
+                Click a project's "VISIT" button (if it has one) to visit the deployed app,
+                or click on the GitHub logo to view the project repository.
             </p>
             <section className='works-section'>
                 <h3>WORKS</h3>

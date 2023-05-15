@@ -385,25 +385,20 @@ nav a:hover button,
 
 .work-card {
     position: relative;
-    margin: 20px 20px 75px 20px;
+    margin: 20px 20px 100px 20px;
 }
 
 .work-card-body {
-    color: whitesmoke;
     background: -webkit-linear-gradient(#904bff, #25239c);
     height: 100%;
-    padding: 10px;
+    padding: 10px 10px 40px 10px;
     border-radius: 25px;
-    z-index: 2;
 }
 
 h4 {
     font-size: 38pt;
     margin: 20px;
     transition: color 0.2s ease;
-}
-.work-link:hover h4 {
-    color: rgb(255, 171, 150);
 }
 
 p.work-card-desc {
@@ -422,54 +417,94 @@ p.work-card-tech {
 }
 
 .work-card-img-box {
-    height: 75%;
-    overflow: hidden;
+    position: relative; /* allows centering of magnifying glass */
+    overflow: hidden; /* clips the blur effect */
+    border-radius: 15px;
 }
 
 .work-card-img-box img {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-height: 500px;
+    max-width: 100%;
     transition: filter 0.5s ease;
 }
-.work-link:hover img {
-    filter: blur(3px);
-}
 
-.work-card-img-box::after {
+/* !! NOTE !! */
+/* This styling is unused in the official release because it deals
+   with Web Dev subpages, which have been removed from the site for now.
+   I'm leaving their code in the project in case I find a use for them.
+   Here, for example, when you hovered over the image a magnifying glass
+   would appear over it, indicating it has more information which you
+   can read by clicking on it. */
+/* .work-card-img-box::after {
     content: "";
     position: absolute;
-    top: -5%;
+    top: 0;
     left: 0;
     background:
         url('../public/images/magnifying-glass.png')
         no-repeat
-        center/15%;
-    filter: opacity(0%);
-    height: inherit;
+        center/12%;
     width: 100%;
+    height: 100%;
+    filter: opacity(0%);
     transition: all 0.5s ease;
 }
 .work-link:hover .work-card-img-box::after {
     filter: opacity(70%);
+} */
+
+.work-card .work-links-box {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    display: flex;
+    align-items: center;
+}
+
+.work-card a {
+    display: inline-block;
+    width: 15vw;
+    border-radius: 10px;
+    text-shadow: 3px 3px 5px black;
+    transition: all 0.5s ease;
 }
 
 .work-card a.visit-link {
-    position: absolute;
-    right: 0;
-    bottom: -35px;
     font-size: 20pt;
     font-weight: bolder;
     color: rgb(241, 241, 241);
     background: -webkit-linear-gradient(#eb2366, #ffa970);
-    width: 10vw;
-    padding: 15px;
-    border-radius: 10px;
-    text-shadow: 3px 3px 5px black;
-    transition: transform 0.5s ease;
-    transform-origin: bottom right;
+    padding: 25px 15px;
 }
-.visit-link:hover {
-    transform: scale(1.05);
+
+.work-card a.github-link {
+    /* position: relative;
+    top: 35px; */
+    width: auto;
+    color: black;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 50px;
+    transform-origin: right;
 }
+.work-card a.github-link img {
+    display: block;
+    max-height: 75px;
+    padding: 5px;
+}
+
+.work-card a.visit-link:hover {
+    padding: 30px 0;
+    width: 20vw;
+}
+.work-card a.github-link:hover {
+    transform: scale(1.2);
+    top: 30px;
+}
+
+
 
 
 
@@ -630,8 +665,6 @@ footer {
 
 
 
-
-
     .subpage-main {
         width: 100%;
     }
@@ -641,4 +674,23 @@ footer {
         line-height: 1.4;
         padding: 0 30px;
     }
+
+
+    .webdev-main .work-card {
+        margin-bottom: 75px;
+    }
+    .webdev-main .work-card-body {
+        padding-bottom: 60px;
+    }
+
+    .webdev-main a.visit-link {
+        width: 100%;
+        padding: 30px 30px;
+        width: 20vw;
+        /* transition: none; */
+    }
+    .webdev-main a.visit-link:hover {
+        padding: 30px 50px;
+    }
+
 }

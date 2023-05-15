@@ -7,7 +7,7 @@ const Header = () => {
     const onHomepage = location.pathname === '/';
     return (
         <div className="header">
-            <h1 onClick={() => navigate('/')}>SUMTWELVE</h1>
+            <h1 onClick={() => navigate('/')}>NOAH NIELSEN</h1>
             <div className="banner-wrapper"></div>
             <img className={`${onHomepage ? "avatar-img-top-home " : ""}avatar-img`}
                  src={`${onHomepage ? "" : "../"}images/avatar-circle.png`}
