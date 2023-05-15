@@ -10,7 +10,7 @@ const Header = () => {
             <h1 onClick={() => navigate('/')}>SUMTWELVE</h1>
             <div className="banner-wrapper"></div>
             <img className={`${onHomepage ? "avatar-img-top-home " : ""}avatar-img`}
-                 src="images/avatar-circle.png"
+                 src={`${onHomepage ? "" : "../"}images/avatar-circle.png`}
                  alt="A simple icon representing the artist Sumtwelve."
             />
             <span className="hello">hi :)</span>
