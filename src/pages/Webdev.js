@@ -15,15 +15,15 @@ const Webdev = () => {
         <main className='subpage-main webdev-main'>
             <h2>Web Developer Portfolio</h2>
             <p>
-                I've been interested in web development for about a year now. I think the web
+                I've been involved in web development for about a year now. I think the web
                 is a fantastic place to host and run applications. Check out
                 the <Link to="/resume">Resume</Link> page for more info on my education
-                and skills in this field!
+                and skills in this field.
             </p>
             <section className='works-section'>
                 <h3>WORKS</h3>
                 {devDataKeys.map((key) => {
-                    return <WorkCard data={devData[key]} key={devData[key].id} />
+                    return <WorkCard devData={devData[key]} key={devData[key].id} />
                 })}
             </section>
 

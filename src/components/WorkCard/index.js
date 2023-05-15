@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// JSON data structure:
+// devData JSON structure:
 // id: lowercase hyphenated version of title, used for react router
 // title: name of the project
 // description: a short description of the project
@@ -11,26 +11,27 @@ import { Link } from 'react-router-dom';
 // url (optional): the URL where the project is deployed. Not all projects have this
 // github: URL of the project's GitHub page
 
-const WorkCard = ({ data }) => {
+const WorkCard = ({ devData }) => {
 
-    let urlAnchor = null;
-    if (data.url) {
-        urlAnchor = ( <a href={data.url} target='_blank' rel='noreferrer'>Launch</a> );
+    let visitAnchor = null;
+    if (devData.url) {
+        visitAnchor = ( <a href={devData.url} className='visit-link' target='_blank' rel='noreferrer'>VISIT &rarr;</a> );
     }
 
     return(
-        <Link to={`${data.id}`} className='work-clickable' data={data}>
-            <div className='work-card'>
-                <div className='work-card-img-box'>
-                    <img src='' alt='' />
-                </div>
-                <h4>{data.title}</h4>
-                <p className='work-card-desc'>{data.description}</p>
-                <p className='work-card-tech'>{data.technologies.join(' / ')}</p>
-                {urlAnchor}
-                <a href={data.github} target='_blank' rel='noreferrer'>GitHub</a>
+        <div className='work-card'>
+            {visitAnchor}
+            <div className='work-card-body'>
+                <Link to={`${devData.id}`} className='work-link' devData={devData}>
+                    <div className='work-card-img-box'>
+                        <img src={devData.thumbnail} alt='' />
+                    </div>
+                    <h4>{devData.title}</h4>
+                    <p className='work-card-desc'>{devData.description}</p>
+                    <p className='work-card-tech'>{devData.technologies.join(' / ')}</p>
+                </Link>
             </div>
-        </Link>
+        </div>
     )
 }
 

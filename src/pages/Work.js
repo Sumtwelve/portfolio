@@ -7,16 +7,15 @@ import React from 'react';
 import { useParams } from 'react-router-dom'
 const devData = require('../data/devWorks.json');
 
+// PATH: /dev/:workId
+
 const Work = () => {
 
-    const { devWorkId } = useParams();
-
-    const song = Object.keys(devData)[devWorkId] || "SONG NOT FOUND";
+    const { workId } = useParams();
 
     return (
         <main>
-            {song}
-            <h2>One song: {devData.woah.title}</h2>
+            <h2>One song:</h2>
         </main>
     )
 };
