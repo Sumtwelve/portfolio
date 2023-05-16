@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BackBtn from '../components/BackBtn';
+const picOfMe = require('../db/pic-of-me.jpg');
 
 const About = () => {
 
@@ -11,6 +12,7 @@ const About = () => {
             {/* <span className='about-nav-joiner' /> */}
             <main className='subpage-main about-main'>
                 <h2>About</h2>
+                <img className='pic-of-me' src={picOfMe} alt='Noah Nielsen, the maker of this site.' />
                 <p>
                     Hello! My name is Noah Nielsen. I'm just another creative who's ready to start
                     his career. I write web apps and music mainly, and I've got a lot to learn
@@ -81,7 +83,7 @@ const About = () => {
                     I'm ready to learn and do so much more.
                 </p>
                 <p style={{textAlign: 'center', marginTop: '50px'}}>
-                    Thanks for reading <span style={{padding: '0 10px'}}>♥</span> This means a lot to me.
+                    Thanks for reading <span style={{padding: '0 10px'}}>♥</span>
                 </p>
                 <BackBtn />
             </main>

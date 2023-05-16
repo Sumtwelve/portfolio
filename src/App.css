@@ -533,6 +533,16 @@ p.work-card-tech {
             #d3255f);
 }
 
+.pic-of-me {
+    display: block;
+    height: 350px;
+    margin: 0 auto;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-radius: 25px;
+    box-shadow: 0 0 75px #00000075;
+}
+
 
 
 
