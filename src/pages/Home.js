@@ -41,7 +41,7 @@ const Home = () => {
                         />
                 </a>
                 <a className='ext-link'
-                   href='https://www.linkedin.com/in/noah-nielsen-22b2251a6/'
+                   href='https://www.linkedin.com/in/noah-nielsen/'
                    target='_blank'
                    rel='noreferrer'>
                         <img className='ext-link-img'
