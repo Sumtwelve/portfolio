@@ -1,0 +1,10 @@
+{
+    "woah": {
+        "title": "woah",
+        "album": "test album"
+    },
+    "test song 2": {
+        "title": "test song 2",
+        "album": "test album 2"
+    }
+}
