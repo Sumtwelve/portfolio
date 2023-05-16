@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom'
-const songData = require('../data/songs.json');
+const songData = require('../db/songs.json');
 
 const Song = () => {
 
