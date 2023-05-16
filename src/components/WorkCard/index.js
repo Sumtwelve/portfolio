@@ -14,7 +14,7 @@ const WorkCard = ({ data }) => {
 
     let visitAnchor = null;
     if (data.url) {
-        visitAnchor = ( <a href={data.url} className='card-link visit-link' target='_blank' rel='noreferrer'>VISIT &rarr;</a> );
+        visitAnchor = ( <a href={data.url} className='card-link visit-link' target='_blank' rel='noreferrer'>VISIT</a> );
     }
     
     return(

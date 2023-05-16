@@ -13,7 +13,7 @@ import Contact from './pages/Contact';   // Contact page
 import Song from './pages/Song';         // page for viewing one Song
 import Album from './pages/Album';       // page for viewing one Album
 import Game from './pages/Game';         // page for viewing/playing one Game
-import Work from './pages/Work';         // details page for a single app/project
+//import Work from './pages/Work';         // details page for a single app/project
 
 import NotFound from './pages/NotFound'; // 404 page
 
@@ -38,14 +38,15 @@ function App() {
             path="/music"
             element={<Music />}
           />
-          <Route
+          {/* TODO: Reinstate this once the Music page is finished! */}
+          {/* <Route
             path="/music/albums/:albumId"
             element={<Album />}
           />
           <Route
             path="/music/songs/:songId"
             element={<Song />}
-          />
+          /> */}
 
           <Route 
             path="/dev"
@@ -63,10 +64,11 @@ function App() {
             path="/games"
             element={<Games />}
           />
-          <Route 
+          {/* TODO: Reinstate this once the Music page is finished! */}
+          {/* <Route 
             path="/games/:gameId"
             element={<Game />}
-          />
+          /> */}
 
           <Route 
             path="/about"

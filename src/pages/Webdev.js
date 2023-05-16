@@ -4,7 +4,7 @@ import WorkCard from '../components/WorkCard';
 import BackBtn from '../components/BackBtn';
 
 // import dev database
-const data = require('../data/devWorks.json');
+const data = require('../db/devWorks.json');
 const devDataKeys = Object.keys(data);
 
 const Webdev = () => {

@@ -18,8 +18,9 @@ const About = () => {
                 </p>
                 <p>
                     I believe technology has the power to make life easier and more enjoyable
-                    for everyone. I also believe everyone should be able to learn about tech
-                    and fully understand how our modern world works.
+                    for everyone. I also believe in accessible learning resources, especially
+                    in relation to technology. The more people fully understand how our
+                    modern world works, the better.
                 </p>
                 <h3>Me & You</h3>
                 <p>
@@ -28,7 +29,7 @@ const About = () => {
                     portfolio</Link> or the <Link to="/resume">Resume page</Link> to get an idea of the skills I have and how I can
                     benefit your workforce. I'm open to learning new things and ready to
                     make awesome apps with you! Send me a message
-                    on <a href="https://www.linkedin.com/in/noah-nielsen-22b2251a6/"
+                    on <a href="https://www.linkedin.com/in/noah-nielsen/"
                     target='_blank' rel='noreferrer'>LinkedIn</a> or check out
                     the <Link to="/contact">Contact</Link> page for more options.
                 </p>
