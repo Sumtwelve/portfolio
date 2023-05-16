@@ -7,12 +7,11 @@
     --resume: #DCE478;
     --contact: #EA8E5B;
 }
-
-::-moz-selection {
-    background: var(--select);
-}
   
 ::selection {
+    background: var(--select);
+}
+::-moz-selection {
     background: var(--select);
 }
 
@@ -582,6 +581,10 @@ p.work-card-tech {
     margin-top: 60px;
 }
 
+.resume-main > p {
+    font-size: 22pt;
+}
+
 /* SKILL ITEM BASE STYLING */
 
 .skill-item {
@@ -635,6 +638,51 @@ p.work-card-tech {
  /* CONTACT STYLING BELOW */
 /*************************/
 
+.contact-main {
+    color: whitesmoke;
+    text-shadow: 0 0 75px rgba(167, 0, 0, 0.5);
+    background: 
+        -webkit-linear-gradient(
+            var(--contact),
+            #ce5d11,
+            #e218c7
+        );
+}
+
+.contact-main h3 {
+    padding: 0 50px;
+}
+
+.contact-main h3 a {
+    color: #bbdeff;
+}
+
+.contact-main p {
+    font-size: 26pt;
+}
+
+
+
+
+  /**************************/
+ /* NOTFOUND STYLING BELOW */
+/**************************/
+
+.notfound-main {
+    padding-bottom: 75px;
+}
+
+.notfound-main h2 {
+    font-size: 48pt;
+    margin: 50px;
+}
+
+.notfound-main h3 {
+    font-size: 24pt;
+    padding: 0 40px;
+    margin: 0;
+}
+
 
 
 
@@ -655,6 +703,9 @@ footer {
     margin-top: 50px;
     z-index: 5;
 }
+
+
+
 
 
 
@@ -702,6 +753,7 @@ footer {
     }
 
     nav button {
+        font-size: 22pt;
         width: 100%;
         transition: all 0.2s ease;
     }
@@ -782,6 +834,26 @@ footer {
     }
     .webdev-main a.visit-link:hover {
         padding: 30px 50px;
+    }
+
+
+
+    /* RESUME PAGE STYLING */
+
+    .resume-main .resume-buttons-box a {
+        width: 80vw;
+        margin: 15px 0;
+    }
+
+    .resume-main p {
+        font-size: 22pt;
+    }
+
+
+    /* CONTACT PAGE STYLING */
+
+    .contact-main p {
+        font-size: 26pt;
     }
 
 }
