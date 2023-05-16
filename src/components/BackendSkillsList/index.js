@@ -12,7 +12,7 @@ const BackendSkillsList = () => {
             <SkillItem text="MongoDB" skillLevel={80} />
             <SkillItem text="Mongoose ODM" skillLevel={85} />
             <SkillItem text="GraphQL" skillLevel={65} />
-            <SkillItem text="Apollo GraphOS" skillLevel={65} />
+            <SkillItem text="Apollo GraphQL" skillLevel={65} />
         </div>
     )
 }
