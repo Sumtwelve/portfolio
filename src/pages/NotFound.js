@@ -6,8 +6,9 @@ const NotFound = () => {
     document.title = "404 Not Found // Sumtwelve"
 
     return (
-        <main className='404-main'>
-            <h2>NotFound</h2>
+        <main className='notfound-main'>
+            <h2>404: Not found</h2>
+            <h3>That URL is pointing to something that don't exist, partner.</h3>
             <BackBtn />
         </main>
     )
