@@ -21,7 +21,7 @@ const Resume = () => {
             <p>
                 Here I've given some visual indicators on my comfort with
                 different front- and back-end technologies. My actual
-                expertise is of course very limited given my experience,
+                expertise is of course limited given my experience,
                 but this summarizes how familiar I am with the basics,
                 and in turn how fluent I typically am when working
                 with them.
