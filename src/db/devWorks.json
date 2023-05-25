@@ -1,5 +1,14 @@
 {
-    
+    "uniqust": {
+        "id": "uniquist",
+        "title": "UNIQUIST",
+        "description": "Generate band name ideas, connect with other musicians.",
+        "descriptionLong": "",
+        "thumbnail": "images/thumbnails/uniquist.jpg",
+        "technologies": ["MERN Stack", "CSS", "GraphQL", "Apollo Client"],
+        "url": "https://immense-earth-43761.herokuapp.com/",
+        "github": "https://github.com/bbairdgen/uniquist"
+    },
     "weather-wherever": {
         "id": "weather-wherever",
         "title": "The Weather Wherever",
