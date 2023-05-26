@@ -28,6 +28,15 @@
         "technologies": ["Node.js", "Express.js", "MongoDB", "REST API"],
         "github": "https://github.com/Sumtwelve/social-media-api"
     },
+    "readme-generator": {
+        "id": "readme-generator",
+        "title": "README Generator",
+        "description": "A CLI app for generating professional READMEs.",
+        "descriptionLong": "",
+        "thumbnail": "images/thumbnails/readme-gen-thumb.jpg",
+        "technologies": ["JavaScript"],
+        "github": "https://github.com/Sumtwelve/readme-generator"
+    },
     "ecommerce-backend": {
         "id": "ecommerce-backend",
         "title": "E-Commerce Backend",
@@ -36,6 +45,16 @@
         "thumbnail": "images/thumbnails/ecommerce-backend-thumb.jpg",
         "technologies": ["Node.js", "Express.js", "MySQL", "REST API"],
         "github": "https://github.com/Sumtwelve/ecommerce-backend"
+    },
+    "fate": {
+        "id": "fate",
+        "title": "FATE",
+        "description": "A JavaScript-flavored text editor presented as a PWA.",
+        "descriptionLong": "",
+        "thumbnail": "images/thumbnails/fate-thumb.png",
+        "technologies": ["IndexedDB", "Node.js", "Express.js", "Webpack", "Workbox"],
+        "url": "https://fate-editor.herokuapp.com/",
+        "github": "https://github.com/Sumtwelve/fate"
     },
     "note-taker": {
         "id": "note-taker",
@@ -66,16 +85,6 @@
         "technologies": ["Node.js", "Express.js", "MySQL"],
         "github": "https://github.com/Sumtwelve/employee-tracker"
     },
-    "fate": {
-        "id": "fate",
-        "title": "FATE",
-        "description": "A JavaScript-flavored text editor presented as a PWA.",
-        "descriptionLong": "",
-        "thumbnail": "images/thumbnails/fate-thumb.png",
-        "technologies": ["IndexedDB", "Node.js", "Express.js", "Webpack", "Workbox"],
-        "url": "https://fate-editor.herokuapp.com/",
-        "github": "https://github.com/Sumtwelve/fate"
-    },
     "js-quiz": {
         "id": "js-quiz",
         "title": "JavaScript Quiz",
@@ -85,14 +94,6 @@
         "technologies": ["Node.js", "jQuery"],
         "url": "https://sumtwelve.github.io/javascript-quiz/",
         "github": "https://github.com/Sumtwelve/javascript-quiz"
-    },
-    "readme-generator": {
-        "id": "readme-generator",
-        "title": "README Generator",
-        "description": "A CLI app for generating professional READMEs.",
-        "descriptionLong": "",
-        "thumbnail": "images/thumbnails/readme-gen-thumb.jpg",
-        "technologies": ["JavaScript"],
-        "github": "https://github.com/Sumtwelve/readme-generator"
     }
+    
 }
