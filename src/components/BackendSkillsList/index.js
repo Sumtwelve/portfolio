@@ -11,8 +11,8 @@ const BackendSkillsList = () => {
             <SkillItem text="Sequelize ODM" skillLevel={90} />
             <SkillItem text="MongoDB" skillLevel={80} />
             <SkillItem text="Mongoose ODM" skillLevel={85} />
-            <SkillItem text="GraphQL" skillLevel={65} />
-            <SkillItem text="Apollo GraphQL" skillLevel={65} />
+            <SkillItem text="GraphQL" skillLevel={70} />
+            <SkillItem text="Apollo GraphQL" skillLevel={70} />
         </div>
     )
 }
